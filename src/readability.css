@@ -155,6 +155,7 @@ details .reading-prose { font-size: 17px; }
 .read-block + .read-block { padding-top: 30px; border-top: 1px solid #e3e9db; }
 .read-block-title { font-size: 13px; letter-spacing: .5px; text-transform: uppercase; color: #536d3d; margin: 0 0 14px; }
 .read-block .reader-bottom { margin-top: 10px; }
+.resource-annex + .resource-annex { margin-top: 24px; border-top: 1px solid #e3e9db; padding-top: 24px; }
 .page-text { white-space: normal; max-width: 76ch; margin: 0 auto; padding: 30px 36px; border: 1px solid #dde5d4; border-radius: 12px; background: #fff; font-size: var(--reading-size); box-shadow: 0 3px 15px #283c3404; }
 .page-text[data-text-size=large] { --reading-size: 21px; }
 .page-text[data-text-size=extra] { --reading-size: 24px; }

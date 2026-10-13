@@ -62,6 +62,17 @@
      <div class="reader-bottom"><span>Source : Outils pour les Maths {{s.level}}, Magnard · page {{p.number}}.</span><a [href]="'guides/'+s.level.toLowerCase()+'.pdf#page='+p.number" target="_blank" rel="noopener">Ouvrir le PDF <app-icon name="arrow" /></a></div>
     </section>
    }
+   @if(resourcePages().length){
+    <section class="read-block" id="read-resources">
+     <h3 class="read-block-title">Annexes · Ressources</h3>
+     @for(p of resourcePages();track p){
+      <div class="resource-annex">
+       <div class="page-image"><img [src]="'pages/ressources-'+s.level.toLowerCase()+'/'+p+'.webp'" [alt]="'Ressource page '+p" /></div>
+       <div class="reader-bottom"><span>Source : Outils pour les Maths {{s.level}}, Magnard · Ressources, p. {{p}}.</span><a [href]="resourceHref(s.level,p)" target="_blank" rel="noopener">Ouvrir le PDF <app-icon name="arrow" /></a></div>
+      </div>
+     }
+    </section>
+   }
   }
  }@else if(draft){
   <div class="editor-intro"><span><span class="status-dot"></span> Enregistrée sur cet appareil{{lastSaved()?' à '+lastSaved():''}}</span><div class="export-buttons" aria-label="Exporter la fiche"><button class="button primary" [disabled]="busy()" (click)="exportFiche('pdf')"><app-icon name="down" />{{exportFormat()==='pdf'?'Création du PDF…':'Exporter en PDF'}}</button><button class="button secondary" [disabled]="busy()" (click)="exportFiche('docx')"><app-icon name="file" />{{exportFormat()==='docx'?'Création du Word…':'Exporter en Word (.docx)'}}</button></div></div>
