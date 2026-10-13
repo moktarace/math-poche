@@ -150,6 +150,11 @@ details .reading-prose { font-size: 17px; }
 .text-size-options button.selected { background: #e5efdc; border-color: #74915a; color: #2c4c1e; box-shadow: inset 0 0 0 1px #74915a; }
 .text-source-label { font-size: 12px; line-height: 1.65; color: #586e49; letter-spacing: .5px; margin: 18px 0; padding: 0 0 14px; }
 .text-source-label span { font-size: 13px; color: #617056; margin-top: 5px; }
+.read-all-toolbar { justify-content: flex-end; }
+.read-block { margin: 0 0 34px; }
+.read-block + .read-block { padding-top: 30px; border-top: 1px solid #e3e9db; }
+.read-block-title { font-size: 13px; letter-spacing: .5px; text-transform: uppercase; color: #536d3d; margin: 0 0 14px; }
+.read-block .reader-bottom { margin-top: 10px; }
 .page-text { white-space: normal; max-width: 76ch; margin: 0 auto; padding: 30px 36px; border: 1px solid #dde5d4; border-radius: 12px; background: #fff; font-size: var(--reading-size); box-shadow: 0 3px 15px #283c3404; }
 .page-text[data-text-size=large] { --reading-size: 21px; }
 .page-text[data-text-size=extra] { --reading-size: 24px; }

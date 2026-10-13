@@ -24,12 +24,14 @@ export class AppComponent implements OnInit {
  toast=signal('');busy=signal(false);exportFormat=signal<'pdf'|'docx'|null>(null);offlineBusy=signal('');offlineProgress=signal(0);offlineAvailable=signal<string[]>([]);
  pendingDelete=signal('');lastSaved=signal('');pageCache=new Map<string,GuidePage[]>();toastTimer:ReturnType<typeof setTimeout>|null=null;
  resourceLevel=signal('');resourcePage=signal(1);
+ readonly readingSections=[{offset:0,title:'Vue d’ensemble'},{offset:1,title:'Rituels'},{offset:2,title:'Classe entière'},{offset:3,title:'Atelier dirigé'},{offset:4,title:'Autres ateliers'},{offset:5,title:'Réinvestissement'}];
  domains=['Nombres','Formes','Espace','Grandeurs','Motifs'];
  navigation:{id:View;label:string;icon:string}[]=[{id:'library',label:'Les séquences',icon:'grid'},{id:'guides',label:'Mes guides',icon:'book'},{id:'preparations',label:'Mes préparations',icon:'file'},{id:'favorites',label:'Mes favoris',icon:'heart'}];
  filtered=computed(()=>{const q=this.normalize(this.query());return (this.catalog()?.sequences||[]).filter(s=>(this.view()!=='favorites'||this.favorites().includes(s.id))&&(this.level()==='Tous'||s.level===this.level())&&(this.period()==='Toutes'||s.period===Number(this.period()))&&(this.domain()==='Tous'||s.domain===this.domain())&&(!q||this.normalize([s.title,s.domain,s.objectives,s.flow,s.materials,s.didactic].join(' ')).includes(q)));});
  sourceMatches=computed(()=>{const q=this.normalize(this.query());return q.length<2?[]:this.guidePages().filter(p=>this.normalize(p.text).includes(q));});
  resourcePages=computed(()=>{const s=this.selected();return s?resourcePageNumbers(s.materials):[];});
  currentPage=computed(()=>this.guidePages().find(p=>p.number===this.pageNumber()));
+ sequencePages=computed(()=>{const s=this.selected();return s?this.guidePages().filter(p=>p.number>=s.start&&p.number<=s.end):[];});
  pageSequence=computed(()=>this.catalog()?.sequences.find(s=>s.level===this.guideLevel() && s.start===this.pageNumber()));
  textSize=signal('normal');
  setTextSize(size:string){this.textSize.set(size);try{localStorage.setItem('maths-poche-reading-size',size);}catch{}}
@@ -59,13 +61,14 @@ export class AppComponent implements OnInit {
   this.selected.set(s);this.detailTab.set(tab);this.draft=null;this.readerError.set('');this.pendingDelete.set('');
   this.dialog?.nativeElement.showModal();if(tab==='read')this.loadPages(s.level,s.start);if(tab==='edit')this.prepare();
  }
- readSequencePage(page:number){const s=this.selected();if(s){this.detailTab.set('read');this.loadPages(s.level,page);}}
+ readSequencePage(page:number){const s=this.selected();if(s){this.detailTab.set('read');this.loadPages(s.level,s.start).then(()=>this.scrollToPage(page));}}
  closeDetail(){this.dialog?.nativeElement.close();this.selected.set(null);this.draft=null;}
  chooseTab(tab:'overview'|'read'|'edit'){this.detailTab.set(tab);const s=this.selected();if(tab==='read'&&s)this.loadPages(s.level,s.start);if(tab==='edit')this.prepare();}
  async loadPages(level:string,page=1){this.guideLevel.set(level);this.pageNumber.set(page);this.readerLoading.set(true);this.readerError.set('');this.guidePages.set([]);try{if(!this.pageCache.has(level)){const r=await fetch(`data/${level.toLowerCase()}.json`);if(!r.ok)throw Error();this.pageCache.set(level,await r.json());}if(this.guideLevel()===level)this.guidePages.set(this.pageCache.get(level)!);}catch{this.readerError.set('Le texte de ce guide est indisponible. Réessayez lorsque la connexion sera rétablie.');}finally{this.readerLoading.set(false);}}
  openGuide(level:string,page=1){this.query.set('');this.guideDialog?.nativeElement.showModal();this.loadPages(level,page);}
  openResource(level:string,page:number){this.resourceLevel.set(level);this.resourcePage.set(page);this.resourceDialog?.nativeElement.showModal();}
  resourceHref(level:string,page:number){return `${resourceFile(level)}#page=${resourcePhysicalPage(level,page)}`;}
+ scrollToPage(number:number){setTimeout(()=>document.getElementById('read-page-'+number)?.scrollIntoView({behavior:'smooth',block:'start'}));}
  changePage(value:number){this.pageNumber.set(Math.min(108,Math.max(1,Number(value)||1)));this.readerError.set('');}
  prepare(){const s=this.selected();if(!s)return;this.detailTab.set('edit');const saved=this.preparations().find(p=>p.sequenceId===s.id);this.draft=saved?{...saved}:{id:crypto.randomUUID(),sequenceId:s.id,title:s.title,classroom:s.level,date:'',duration:'4 jours · ateliers en rotation',objectives:s.objectives,materials:s.materials,flow:sequenceFlow(s),differentiation:s.differentiation,evaluation:'',notes:'',updatedAt:new Date().toISOString()};if(!saved)this.saveDraft(false);}
  saveDraft(show=false){if(!this.draft)return;this.draft.updatedAt=new Date().toISOString();const draft={...this.draft};this.preparations.update(all=>[draft,...all.filter(p=>p.id!==draft.id)]);if(this.persist()){this.lastSaved.set(new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}));if(show)this.notify('Votre fiche est enregistrée sur cet appareil.');}}
