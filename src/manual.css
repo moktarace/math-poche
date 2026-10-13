@@ -89,6 +89,9 @@ app-manual-overview, app-manual-page { display: block; }
 .source-shortcuts button:nth-child(3) { color: #507e2a; border-color: #a4bf80; }
 .source-shortcuts button:nth-child(n+4) { color: #735897; border-color: #b8a2d0; }
 .source-shortcuts button.active { background: #fff3d7; color: #8c4e13; border-color: #c59142; }
+.resource-shortcuts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; }
+.resource-shortcuts span { font-size: .85em; color: #52604d; }
+.resource-shortcuts button { font-size: .85em; min-height: 36px; padding: 6px 12px; border: 1px solid #90c6e2; border-radius: 999px; background: #eff8fc; color: #2c7195; }
 .manual-overview ~ details { margin-top: 22px; }
 .hero { background: #fff4dc; border-color: #ecd9b2; }
 .hero .eyebrow { color: #8d591c; }

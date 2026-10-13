@@ -58,4 +58,24 @@ export function sequenceFlow(seq:Sequence):string{
 }
 export const exportFilename=(title:string)=>title.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/gi,'-').toLowerCase().slice(0,90)||'sequence';
 export function displayDate(date:string):string{return /^(\d{4})-(\d{2})-(\d{2})$/.test(date)?date.split('-').reverse().join('/'):date||'À préciser';}
-export function sourceCaption(seq:Sequence):string{return `Outils pour les Maths ${seq.level}, Magnard, pages ${seq.start} à ${seq.end}.`;} 
+export function sourceCaption(seq:Sequence):string{return `Outils pour les Maths ${seq.level}, Magnard, pages ${seq.start} à ${seq.end}.`;}
+
+/** Printed page shown on the resource sheet = PDF page index + this offset (verified visually per level). */
+export const resourceOffset:Record<string,number>={PS:1,MS:0};
+export const resourceFile=(level:string):string=>`guides/ressources-${level.toLowerCase()}.pdf`;
+export const resourcePhysicalPage=(level:string,printed:number):number=>printed+(resourceOffset[level]??0);
+/** Extract every page number cited as "(Ressources, p. 7, 9-11…)" in a free-text field. */
+export function resourcePageNumbers(text:string):number[]{
+ const pages=new Set<number>();
+ const citation=/Ressources,?\s*p\.?\s*([0-9][0-9,\s-]*)/gi;
+ let match:RegExpExecArray|null;
+ while((match=citation.exec(text))){
+  for(const token of match[1].split(',')){
+   const range=token.trim().match(/^(\d+)(?:\s*-\s*(\d+))?$/);
+   if(!range)continue;
+   const from=Number(range[1]),to=range[2]?Number(range[2]):from;
+   for(let n=from;n<=Math.min(to,from+50);n++)pages.add(n);
+  }
+ }
+ return [...pages].sort((a,b)=>a-b);
+}

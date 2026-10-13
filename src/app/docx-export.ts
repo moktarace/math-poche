@@ -1,11 +1,25 @@
-import { AlignmentType, BorderStyle, Document, HeadingLevel, LevelFormat, Packer, Paragraph, ShadingType, Table, TableCell, TableLayoutType, TableRow, TextRun, VerticalAlign, WidthType } from 'docx';
+import { AlignmentType, BorderStyle, Document, HeadingLevel, ImageRun, LevelFormat, Packer, Paragraph, ShadingType, Table, TableCell, TableLayoutType, TableRow, TextRun, VerticalAlign, WidthType } from 'docx';
 import type { IRunOptions, IParagraphOptions } from 'docx';
 import type { Preparation, Sequence } from './models';
-import { preparationSections, exportPalette, exportFilename, displayDate, sourceCaption } from './export-model';
+import { preparationSections, exportPalette, exportFilename, displayDate, sourceCaption, resourcePageNumbers } from './export-model';
 import { download } from './file-download';
 const FONT='Liberation Sans';
 const noBorder={style:BorderStyle.NONE,size:0,color:'FFFFFF'};
 const noBorders={top:noBorder,bottom:noBorder,left:noBorder,right:noBorder,insideHorizontal:noBorder,insideVertical:noBorder};
+/** Convert a cached resource page (WebP) to PNG bytes for embedding; unavailable outside a browser. */
+async function resourcePagePng(level:string,printed:number):Promise<{data:Uint8Array;width:number;height:number}|null>{
+ if(typeof document==='undefined'||typeof createImageBitmap==='undefined')return null;
+ try{
+  const response=await fetch(`pages/ressources-${level.toLowerCase()}/${printed}.webp`);
+  if(!response.ok)return null;
+  const bitmap=await createImageBitmap(await response.blob());
+  const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;
+  const ctx=canvas.getContext('2d');if(!ctx)return null;
+  ctx.drawImage(bitmap,0,0);
+  const blob:Blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('toBlob')),'image/png'));
+  return {data:new Uint8Array(await blob.arrayBuffer()),width:bitmap.width,height:bitmap.height};
+ }catch{return null;}
+}
 export async function createPreparationDocx(prep:Preparation,seq:Sequence):Promise<Uint8Array>{
  const children:(Paragraph|Table)[]=[];
  const text=(value:string,options:IRunOptions={})=>new TextRun({text:value,font:FONT,...options});
@@ -45,6 +59,21 @@ export async function createPreparationDocx(prep:Preparation,seq:Sequence):Promi
     ...(block.kind==='bullet'?{numbering:{reference:'manual-bullets',level:0}}:{})
    };
    children.push(new Paragraph(opts));
+  }
+ }
+ const cited=resourcePageNumbers(prep.materials);
+ if(cited.length){
+  children.push(new Paragraph({
+   heading:HeadingLevel.HEADING_1,children:[text('Ressources',{bold:true,color:'FFFFFF',size:25})],
+   keepNext:true,spacing:{before:230,after:140,line:300},indent:{left:160,right:160},
+   shading:{fill:'2C7195',type:ShadingType.CLEAR},border:{left:{color:'2C7195',style:BorderStyle.SINGLE,size:15,space:8}}
+  }));
+  for(const pageNumber of cited){
+   const image=await resourcePagePng(seq.level,pageNumber);
+   if(!image)continue;
+   const maxWidth=560,scale=Math.min(1,maxWidth/image.width);
+   children.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:80,after:30},children:[new ImageRun({type:'png',data:image.data,transformation:{width:Math.round(image.width*scale),height:Math.round(image.height*scale)}})]}));
+   children.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:160},children:[text(`Ressources, p. ${pageNumber}`,{size:16,color:'64605A'})]}));
   }
  }
  const document=new Document({

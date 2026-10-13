@@ -16,6 +16,22 @@
       "name": "Outils pour les Maths MS",
       "publisher": "Magnard",
       "year": 2025
+    },
+    {
+      "level": "PS",
+      "pages": 113,
+      "file": "guides/ressources-ps.pdf",
+      "name": "Ressources PS",
+      "publisher": "Magnard",
+      "year": 2026
+    },
+    {
+      "level": "MS",
+      "pages": 128,
+      "file": "guides/ressources-ms.pdf",
+      "name": "Ressources MS",
+      "publisher": "Magnard",
+      "year": 2025
     }
   ],
   "sequences": [

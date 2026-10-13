@@ -1,7 +1,7 @@
 import { PDFDocument, rgb, type PDFFont, type PDFPage } from 'pdf-lib';
 import fontkit from '@pdf-lib/fontkit';
 import type { Preparation, Sequence } from './models';
-import { preparationSections, exportPalette, exportFilename, displayDate, sourceCaption, type ExportSection } from './export-model';
+import { preparationSections, exportPalette, exportFilename, displayDate, sourceCaption, resourcePageNumbers, resourceFile, resourcePhysicalPage, type ExportSection } from './export-model';
 import { download } from './file-download';
 export { download } from './file-download';
 const W=595.28,H=841.89,M=38,CW=W-2*M,BOTTOM=57;
@@ -84,6 +84,18 @@ export async function createPreparationPdf(prep:Preparation,seq:Sequence,fontByt
  }
  for(const s of preparationSections(prep))section(s);
  if(seq.warning)section({title:'Repère du guide',theme:'gold',blocks:[{kind:'paragraph',text:seq.warning}]});
+ const cited=resourcePageNumbers(prep.materials);
+ if(cited.length){
+  try{
+   const response=await fetch(resourceFile(seq.level));
+   if(response.ok){
+    const source=await PDFDocument.load(await response.arrayBuffer());
+    const indices=cited.map(n=>resourcePhysicalPage(seq.level,n)-1).filter(i=>i>=0&&i<source.getPageCount());
+    const copied=await pdf.copyPages(source,indices);
+    copied.forEach(p=>pdf.addPage(p));
+   }
+  }catch{/* resource pages are a bonus; the fiche export still succeeds without them */}
+ }
  return pdf.save();
 }
 export async function exportPreparation(prep:Preparation,seq:Sequence):Promise<void>{download(await createPreparationPdf(prep,seq),`fiche-${seq.level.toLowerCase()}-${exportFilename(prep.title)}.pdf`,'application/pdf');}
@@ -91,5 +103,17 @@ export async function exportSourcePages(seq:Sequence):Promise<void>{
  const response=await fetch(`guides/${seq.level.toLowerCase()}.pdf`);if(!response.ok)throw Error('Guide indisponible');
  const source=await PDFDocument.load(await response.arrayBuffer());const output=await PDFDocument.create();
  const pages=await output.copyPages(source,Array.from({length:seq.end-seq.start+1},(_,i)=>seq.start-1+i));pages.forEach(p=>output.addPage(p));
+ const cited=resourcePageNumbers(seq.materials);
+ if(cited.length){
+  try{
+   const resourceResponse=await fetch(resourceFile(seq.level));
+   if(resourceResponse.ok){
+    const resourceSource=await PDFDocument.load(await resourceResponse.arrayBuffer());
+    const indices=cited.map(n=>resourcePhysicalPage(seq.level,n)-1).filter(i=>i>=0&&i<resourceSource.getPageCount());
+    const copied=await output.copyPages(resourceSource,indices);
+    copied.forEach(p=>output.addPage(p));
+   }
+  }catch{/* resource pages are a bonus; the guide export still succeeds without them */}
+ }
  output.setTitle(`${seq.level} — ${seq.title}`);download(await output.save(),`guide-${seq.id}.pdf`,'application/pdf');
 }

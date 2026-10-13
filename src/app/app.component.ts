@@ -8,12 +8,13 @@ import { ManualOverviewComponent } from './manual-overview.component';
 import { ManualPageComponent } from './manual-page.component';
 import { Catalog, GuidePage, Sequence, Preparation, LocalData } from './models';
 import { download } from './file-download';
-import { sequenceFlow } from './export-model';
+import { sequenceFlow, resourcePageNumbers, resourceFile, resourcePhysicalPage } from './export-model';
 type View='library'|'guides'|'preparations'|'favorites'|'settings';
 @Component({selector:'app-root',standalone:true,imports:[FormsModule,DatePipe,NgTemplateOutlet,IconComponent,ReadingTextComponent,ManualOverviewComponent,ManualPageComponent],templateUrl:'./app.component.html'})
 export class AppComponent implements OnInit {
  @ViewChild('detailDialog') dialog?:ElementRef<HTMLDialogElement>;
  @ViewChild('guideDialog') guideDialog?:ElementRef<HTMLDialogElement>;
+ @ViewChild('resourceDialog') resourceDialog?:ElementRef<HTMLDialogElement>;
  readonly sw=inject(SwUpdate);
  catalog=signal<Catalog|null>(null);loading=signal(true);error=signal('');view=signal<View>('library');
  level=signal('Tous');period=signal('Toutes');domain=signal('Tous');query=signal('');favorites=signal<string[]>([]);preparations=signal<Preparation[]>([]);
@@ -22,10 +23,12 @@ export class AppComponent implements OnInit {
  online=signal(navigator.onLine);swReady=signal(false);updateReady=signal(false);installPrompt:any=null;
  toast=signal('');busy=signal(false);exportFormat=signal<'pdf'|'docx'|null>(null);offlineBusy=signal('');offlineProgress=signal(0);offlineAvailable=signal<string[]>([]);
  pendingDelete=signal('');lastSaved=signal('');pageCache=new Map<string,GuidePage[]>();toastTimer:ReturnType<typeof setTimeout>|null=null;
+ resourceLevel=signal('');resourcePage=signal(1);
  domains=['Nombres','Formes','Espace','Grandeurs','Motifs'];
  navigation:{id:View;label:string;icon:string}[]=[{id:'library',label:'Les séquences',icon:'grid'},{id:'guides',label:'Mes guides',icon:'book'},{id:'preparations',label:'Mes préparations',icon:'file'},{id:'favorites',label:'Mes favoris',icon:'heart'}];
  filtered=computed(()=>{const q=this.normalize(this.query());return (this.catalog()?.sequences||[]).filter(s=>(this.view()!=='favorites'||this.favorites().includes(s.id))&&(this.level()==='Tous'||s.level===this.level())&&(this.period()==='Toutes'||s.period===Number(this.period()))&&(this.domain()==='Tous'||s.domain===this.domain())&&(!q||this.normalize([s.title,s.domain,s.objectives,s.flow,s.materials,s.didactic].join(' ')).includes(q)));});
  sourceMatches=computed(()=>{const q=this.normalize(this.query());return q.length<2?[]:this.guidePages().filter(p=>this.normalize(p.text).includes(q));});
+ resourcePages=computed(()=>{const s=this.selected();return s?resourcePageNumbers(s.materials):[];});
  currentPage=computed(()=>this.guidePages().find(p=>p.number===this.pageNumber()));
  pageSequence=computed(()=>this.catalog()?.sequences.find(s=>s.level===this.guideLevel() && s.start===this.pageNumber()));
  textSize=signal('normal');
@@ -61,6 +64,8 @@ export class AppComponent implements OnInit {
  chooseTab(tab:'overview'|'read'|'edit'){this.detailTab.set(tab);const s=this.selected();if(tab==='read'&&s)this.loadPages(s.level,s.start);if(tab==='edit')this.prepare();}
  async loadPages(level:string,page=1){this.guideLevel.set(level);this.pageNumber.set(page);this.readerLoading.set(true);this.readerError.set('');this.guidePages.set([]);try{if(!this.pageCache.has(level)){const r=await fetch(`data/${level.toLowerCase()}.json`);if(!r.ok)throw Error();this.pageCache.set(level,await r.json());}if(this.guideLevel()===level)this.guidePages.set(this.pageCache.get(level)!);}catch{this.readerError.set('Le texte de ce guide est indisponible. Réessayez lorsque la connexion sera rétablie.');}finally{this.readerLoading.set(false);}}
  openGuide(level:string,page=1){this.query.set('');this.guideDialog?.nativeElement.showModal();this.loadPages(level,page);}
+ openResource(level:string,page:number){this.resourceLevel.set(level);this.resourcePage.set(page);this.resourceDialog?.nativeElement.showModal();}
+ resourceHref(level:string,page:number){return `${resourceFile(level)}#page=${resourcePhysicalPage(level,page)}`;}
  changePage(value:number){this.pageNumber.set(Math.min(108,Math.max(1,Number(value)||1)));this.readerError.set('');}
  prepare(){const s=this.selected();if(!s)return;this.detailTab.set('edit');const saved=this.preparations().find(p=>p.sequenceId===s.id);this.draft=saved?{...saved}:{id:crypto.randomUUID(),sequenceId:s.id,title:s.title,classroom:s.level,date:'',duration:'4 jours · ateliers en rotation',objectives:s.objectives,materials:s.materials,flow:sequenceFlow(s),differentiation:s.differentiation,evaluation:'',notes:'',updatedAt:new Date().toISOString()};if(!saved)this.saveDraft(false);}
  saveDraft(show=false){if(!this.draft)return;this.draft.updatedAt=new Date().toISOString();const draft={...this.draft};this.preparations.update(all=>[draft,...all.filter(p=>p.id!==draft.id)]);if(this.persist()){this.lastSaved.set(new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}));if(show)this.notify('Votre fiche est enregistrée sur cet appareil.');}}
@@ -77,7 +82,7 @@ export class AppComponent implements OnInit {
   }catch{this.notify(`L’export ${format==='docx'?'Word':'PDF'} a échoué. Votre fiche reste enregistrée sur cet appareil. Réessayez après le chargement complet de l’application.`);}
   finally{this.busy.set(false);this.exportFormat.set(null);}
  }
- async exportOriginal(){const s=this.selected();if(!s)return;this.busy.set(true);try{const {exportSourcePages}=await import('./pdf-export');await exportSourcePages(s);this.notify('Les 6 pages originales ont été exportées.');}catch{this.notify('Le PDF original n’est pas disponible. Téléchargez le guide depuis Mes guides lorsque vous êtes en ligne.');}finally{this.busy.set(false);}}
+ async exportOriginal(){const s=this.selected();if(!s)return;this.busy.set(true);try{const {exportSourcePages}=await import('./pdf-export');await exportSourcePages(s);this.notify(this.resourcePages().length?'Les 6 pages originales et les ressources citées ont été exportées.':'Les 6 pages originales ont été exportées.');}catch{this.notify('Le PDF original n’est pas disponible. Téléchargez le guide depuis Mes guides lorsque vous êtes en ligne.');}finally{this.busy.set(false);}}
  exportBackup(){download(JSON.stringify({version:1,favorites:this.favorites(),preparations:this.preparations()},null,2),`maths-en-poche-${new Date().toISOString().slice(0,10)}.json`,'application/json');}
  async importBackup(event:Event){const input=event.target as HTMLInputElement;const file=input.files?.[0];if(!file)return;try{if(file.size>10000000)throw Error();const data=JSON.parse(await file.text());if(!this.validBackup(data))throw Error();this.favorites.update(ids=>[...new Set([...ids,...data.favorites])]);this.preparations.update(existing=>{const map=new Map(existing.map(p=>[p.id,p]));for(const p of data.preparations){const prev=map.get(p.id);if(!prev||p.updatedAt>prev.updatedAt)map.set(p.id,p);}return [...map.values()];});if(this.persist())this.notify('Sauvegarde importée et fusionnée avec vos préparations.');}catch{this.notify('Fichier invalide. Choisissez une sauvegarde JSON créée par Maths en poche.');}input.value='';}
  async install(){if(this.installPrompt){await this.installPrompt.prompt();this.installPrompt=null;}else this.go('settings');}
