@@ -6,7 +6,7 @@ import { download } from './file-download';
 export { download } from './file-download';
 const W=595.28,H=841.89,M=38,CW=W-2*M,BOTTOM=57;
 const color=(hex:string)=>rgb(parseInt(hex.slice(0,2),16)/255,parseInt(hex.slice(2,4),16)/255,parseInt(hex.slice(4,6),16)/255);
-const ink=color('30343A'),muted=color('64605A'),white=rgb(1,1,1);
+const ink=color('30343A'),white=rgb(1,1,1);
 interface FontBytes {regular:Uint8Array;bold:Uint8Array;}
 async function loadFonts():Promise<FontBytes>{
  const bytes=await Promise.all(['Regular','Bold'].map(async style=>{const r=await fetch(`fonts/LiberationSans-${style}.ttf`);if(!r.ok)throw Error('Police indisponible');return new Uint8Array(await r.arrayBuffer());}));
@@ -84,14 +84,6 @@ export async function createPreparationPdf(prep:Preparation,seq:Sequence,fontByt
  }
  for(const s of preparationSections(prep))section(s);
  if(seq.warning)section({title:'Repère du guide',theme:'gold',blocks:[{kind:'paragraph',text:seq.warning}]});
- const total=pdf.getPageCount();
- pdf.getPages().forEach((p,i)=>{
-  page=p;
-  page.drawLine({start:{x:M,y:42},end:{x:W-M,y:42},color:color('DED7C9'),thickness:.5});
-  draw(`Source : ${sourceCaption(seq)}`,M,29,7.5,regular,muted);
-  draw('Fiche personnelle · Maths en poche',M,18,7.5,regular,muted);
-  draw(`${i+1} / ${total}`,W-M-28,25,8.5,bold,color('8D5E00'));
- });
  return pdf.save();
 }
 export async function exportPreparation(prep:Preparation,seq:Sequence):Promise<void>{download(await createPreparationPdf(prep,seq),`fiche-${seq.level.toLowerCase()}-${exportFilename(prep.title)}.pdf`,'application/pdf');}

@@ -1,4 +1,4 @@
-import { AlignmentType, BorderStyle, Document, Footer, HeadingLevel, LevelFormat, Packer, PageNumber, Paragraph, ShadingType, Table, TableCell, TableLayoutType, TableRow, TextRun, VerticalAlign, WidthType } from 'docx';
+import { AlignmentType, BorderStyle, Document, HeadingLevel, LevelFormat, Packer, Paragraph, ShadingType, Table, TableCell, TableLayoutType, TableRow, TextRun, VerticalAlign, WidthType } from 'docx';
 import type { IRunOptions, IParagraphOptions } from 'docx';
 import type { Preparation, Sequence } from './models';
 import { preparationSections, exportPalette, exportFilename, displayDate, sourceCaption } from './export-model';
@@ -55,11 +55,7 @@ export async function createPreparationDocx(prep:Preparation,seq:Sequence):Promi
    {id:'Heading2',name:'Heading 2',basedOn:'Normal',next:'Normal',run:{font:FONT,size:22,bold:true},paragraph:{keepNext:true}}
   ]},
   numbering:{config:[{reference:'manual-bullets',levels:[{level:0,format:LevelFormat.BULLET,text:'•',alignment:AlignmentType.LEFT,style:{paragraph:{indent:{left:260,hanging:180}},run:{font:FONT}}}]}]},
-  sections:[{properties:{page:{size:{width:11906,height:16838},margin:{top:760,bottom:900,left:760,right:760,header:300,footer:360}}},
-   footers:{default:new Footer({children:[
-    new Paragraph({children:[text(`Source : ${sourceCaption(seq)}`,{size:15,color:'64605A'})],spacing:{before:50,after:35},border:{top:{style:BorderStyle.SINGLE,color:'DED7C9',size:4,space:7}}}),
-    new Paragraph({children:[text('Maths en poche · Fiche personnelle    |    ',{size:15,color:'64605A'}),new TextRun({children:[PageNumber.CURRENT,' / ',PageNumber.TOTAL_PAGES],font:FONT,size:16,color:'8D5E00'})],spacing:{after:0}})
-   ]})},children}]
+  sections:[{properties:{page:{size:{width:11906,height:16838},margin:{top:760,bottom:900,left:760,right:760,header:300,footer:360}}},children}]
  });
  return new Uint8Array(await Packer.toArrayBuffer(document));
 }
