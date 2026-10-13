@@ -1,6 +1,6 @@
 import { Component, signal, computed, inject, HostListener, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DatePipe, NgTemplateOutlet } from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
 import { SwUpdate } from '@angular/service-worker';
 import { IconComponent } from './icon.component';
 import { ReadingTextComponent } from './reading-text.component';
@@ -10,7 +10,7 @@ import { Catalog, GuidePage, Sequence, Preparation, LocalData } from './models';
 import { download } from './file-download';
 import { sequenceFlow, resourcePageNumbers, resourceFile, resourcePhysicalPage } from './export-model';
 type View='library'|'guides'|'preparations'|'favorites'|'settings';
-@Component({selector:'app-root',standalone:true,imports:[FormsModule,DatePipe,NgTemplateOutlet,IconComponent,ReadingTextComponent,ManualOverviewComponent,ManualPageComponent],templateUrl:'./app.component.html'})
+@Component({selector:'app-root',standalone:true,imports:[FormsModule,NgTemplateOutlet,IconComponent,ReadingTextComponent,ManualOverviewComponent,ManualPageComponent],templateUrl:'./app.component.html'})
 export class AppComponent implements OnInit {
  @ViewChild('detailDialog') dialog?:ElementRef<HTMLDialogElement>;
  @ViewChild('guideDialog') guideDialog?:ElementRef<HTMLDialogElement>;
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
  resourceLevel=signal('');resourcePage=signal(1);
  readonly readingSections=[{offset:0,title:'Vue d’ensemble'},{offset:1,title:'Rituels'},{offset:2,title:'Classe entière'},{offset:3,title:'Atelier dirigé'},{offset:4,title:'Autres ateliers'},{offset:5,title:'Réinvestissement'}];
  domains=['Nombres','Formes','Espace','Grandeurs','Motifs'];
- navigation:{id:View;label:string;icon:string}[]=[{id:'library',label:'Les séquences',icon:'grid'},{id:'guides',label:'Mes guides',icon:'book'},{id:'preparations',label:'Mes préparations',icon:'file'},{id:'favorites',label:'Mes favoris',icon:'heart'}];
+ navigation:{id:View;label:string;icon:string}[]=[{id:'library',label:'Les séquences',icon:'grid'},{id:'guides',label:'Mes guides',icon:'book'},{id:'favorites',label:'Mes favoris',icon:'heart'}];
  filtered=computed(()=>{const q=this.normalize(this.query());return (this.catalog()?.sequences||[]).filter(s=>(this.view()!=='favorites'||this.favorites().includes(s.id))&&(this.level()==='Tous'||s.level===this.level())&&(this.period()==='Toutes'||s.period===Number(this.period()))&&(this.domain()==='Tous'||s.domain===this.domain())&&(!q||this.normalize([s.title,s.domain,s.objectives,s.flow,s.materials,s.didactic].join(' ')).includes(q)));});
  sourceMatches=computed(()=>{const q=this.normalize(this.query());return q.length<2?[]:this.guidePages().filter(p=>this.normalize(p.text).includes(q));});
  resourcePages=computed(()=>{const s=this.selected();return s?resourcePageNumbers(s.materials):[];});
@@ -86,6 +86,7 @@ export class AppComponent implements OnInit {
   finally{this.busy.set(false);this.exportFormat.set(null);}
  }
  async exportOriginal(){const s=this.selected();if(!s)return;this.busy.set(true);try{const {exportSourcePages}=await import('./pdf-export');await exportSourcePages(s);this.notify(this.resourcePages().length?'Les 6 pages originales et les ressources citées ont été exportées.':'Les 6 pages originales ont été exportées.');}catch{this.notify('Le PDF original n’est pas disponible. Téléchargez le guide depuis Mes guides lorsque vous êtes en ligne.');}finally{this.busy.set(false);}}
+ async exportOriginalDocx(){const s=this.selected();if(!s)return;this.busy.set(true);try{const {exportSourceDocx}=await import('./docx-export');await exportSourceDocx(s);this.notify(this.resourcePages().length?'Le Word du guide et des ressources est prêt.':'Le Word du guide est prêt.');}catch{this.notify('L’export Word a échoué. Réessayez après le chargement complet de l’application.');}finally{this.busy.set(false);}}
  exportBackup(){download(JSON.stringify({version:1,favorites:this.favorites(),preparations:this.preparations()},null,2),`maths-en-poche-${new Date().toISOString().slice(0,10)}.json`,'application/json');}
  async importBackup(event:Event){const input=event.target as HTMLInputElement;const file=input.files?.[0];if(!file)return;try{if(file.size>10000000)throw Error();const data=JSON.parse(await file.text());if(!this.validBackup(data))throw Error();this.favorites.update(ids=>[...new Set([...ids,...data.favorites])]);this.preparations.update(existing=>{const map=new Map(existing.map(p=>[p.id,p]));for(const p of data.preparations){const prev=map.get(p.id);if(!prev||p.updatedAt>prev.updatedAt)map.set(p.id,p);}return [...map.values()];});if(this.persist())this.notify('Sauvegarde importée et fusionnée avec vos préparations.');}catch{this.notify('Fichier invalide. Choisissez une sauvegarde JSON créée par Maths en poche.');}input.value='';}
  async install(){if(this.installPrompt){await this.installPrompt.prompt();this.installPrompt=null;}else this.go('settings');}

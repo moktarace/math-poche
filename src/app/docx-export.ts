@@ -6,11 +6,11 @@ import { download } from './file-download';
 const FONT='Liberation Sans';
 const noBorder={style:BorderStyle.NONE,size:0,color:'FFFFFF'};
 const noBorders={top:noBorder,bottom:noBorder,left:noBorder,right:noBorder,insideHorizontal:noBorder,insideVertical:noBorder};
-/** Convert a cached resource page (WebP) to PNG bytes for embedding; unavailable outside a browser. */
-async function resourcePagePng(level:string,printed:number):Promise<{data:Uint8Array;width:number;height:number}|null>{
+/** Convert a cached WebP page to PNG bytes for embedding; unavailable outside a browser. */
+async function webpToPng(path:string):Promise<{data:Uint8Array;width:number;height:number}|null>{
  if(typeof document==='undefined'||typeof createImageBitmap==='undefined')return null;
  try{
-  const response=await fetch(`pages/ressources-${level.toLowerCase()}/${printed}.webp`);
+  const response=await fetch(path);
   if(!response.ok)return null;
   const bitmap=await createImageBitmap(await response.blob());
   const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;
@@ -20,6 +20,7 @@ async function resourcePagePng(level:string,printed:number):Promise<{data:Uint8A
   return {data:new Uint8Array(await blob.arrayBuffer()),width:bitmap.width,height:bitmap.height};
  }catch{return null;}
 }
+const resourcePagePng=(level:string,printed:number)=>webpToPng(`pages/ressources-${level.toLowerCase()}/${printed}.webp`);
 export async function createPreparationDocx(prep:Preparation,seq:Sequence):Promise<Uint8Array>{
  const children:(Paragraph|Table)[]=[];
  const text=(value:string,options:IRunOptions={})=>new TextRun({text:value,font:FONT,...options});
@@ -90,4 +91,79 @@ export async function createPreparationDocx(prep:Preparation,seq:Sequence):Promi
 }
 export async function exportPreparationDocx(prep:Preparation,seq:Sequence):Promise<void>{
  download(await createPreparationDocx(prep,seq),`fiche-${seq.level.toLowerCase()}-${exportFilename(prep.title)}.docx`,'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+}
+/** Word version of the overview tab: reconstructed text layout, plus cited resource pages as images. */
+export async function createSourceDocx(seq:Sequence):Promise<Uint8Array>{
+ const children:(Paragraph|Table)[]=[];
+ const text=(value:string,options:IRunOptions={})=>new TextRun({text:value,font:FONT,...options});
+ const line=(value:string,runOptions:IRunOptions={},options:IParagraphOptions={})=>new Paragraph({children:[text(value,runOptions)],...options});
+ const heading=(title:string,theme:keyof typeof exportPalette)=>{
+  const palette=exportPalette[theme];
+  return new Paragraph({
+   heading:HeadingLevel.HEADING_1,children:[text(title,{bold:true,color:palette.ink,size:25})],
+   keepNext:true,spacing:{before:230,after:140,line:300},indent:{left:160,right:160},
+   shading:{fill:palette.pale,type:ShadingType.CLEAR},border:{left:{color:palette.ink,style:BorderStyle.SINGLE,size:15,space:8}}
+  });
+ };
+ const bullet=(value:string)=>line(value,{size:22},{numbering:{reference:'manual-bullets',level:0},spacing:{after:70,line:290}});
+ children.push(new Table({width:{size:10384,type:WidthType.DXA},columnWidths:[1650,8734],layout:TableLayoutType.FIXED,borders:noBorders,rows:[new TableRow({children:[
+  new TableCell({width:{size:1650,type:WidthType.DXA},verticalAlign:VerticalAlign.CENTER,shading:{fill:'B65317',type:ShadingType.CLEAR},margins:{top:180,bottom:180,left:100,right:100},children:[
+   new Paragraph({alignment:AlignmentType.CENTER,children:[text('PÉRIODE',{size:18,bold:true,color:'FFFFFF'})]}),
+   new Paragraph({alignment:AlignmentType.CENTER,children:[text(String(seq.period),{size:56,bold:true,color:'FFFFFF'})],spacing:{after:90}}),
+   new Paragraph({alignment:AlignmentType.CENTER,children:[text(`Semaine ${seq.week}`,{size:19,bold:true,color:'FFFFFF'})]})
+  ]}),
+  new TableCell({width:{size:8734,type:WidthType.DXA},verticalAlign:VerticalAlign.CENTER,shading:{fill:'FFF5DB',type:ShadingType.CLEAR},margins:{top:180,bottom:180,left:260,right:220},children:[
+   new Paragraph({children:[text(`OUTILS POUR LES MATHS · ${seq.level}`,{size:17,bold:true,color:'8D5E00'})],spacing:{after:130}}),
+   new Paragraph({heading:HeadingLevel.TITLE,children:[text(seq.title||'Séquence',{size:44,bold:true,color:'B65317'})],spacing:{after:0},keepNext:false})
+  ]})
+ ]})]}));
+ children.push(line(`Domaine : ${seq.domain}`,{},{spacing:{before:220,after:200}}));
+ children.push(heading('Objectifs d’apprentissage','orange'));
+ for(const goal of seq.objectives.split(/(?<=[.!?])\s+(?=[A-ZÀ-Ÿ])/).filter(Boolean))children.push(bullet(goal));
+ if(seq.didactic){
+  children.push(heading('Le coin de l’enseignant·e','gold'));
+  for(const paragraph of seq.didactic.split('\n').map(p=>p.trim()).filter(Boolean))children.push(line(paragraph,{size:22},{spacing:{after:110,line:290}}));
+ }
+ const m=seq.manual;
+ if(m){
+  children.push(heading('Rituels','blue'));
+  for(const ritual of m.rituals)children.push(bullet(ritual));
+  children.push(heading('Activités en classe entière','green'));
+  for(const day of m.days)children.push(line(`Jour ${day.number} — ${day.title}`,{bold:true,size:22},{spacing:{after:80}}));
+  children.push(heading('Ateliers','purple'));
+  for(const workshop of m.workshops){
+   children.push(line(`${workshop.label} — ${workshop.title}`,{bold:true,size:22},{spacing:{before:100,after:20}}));
+   children.push(line(`Objectif : ${workshop.objective}`,{size:21,color:'4A4F45'},{spacing:{after:workshop.note?20:100}}));
+   if(workshop.note)children.push(line(workshop.note,{italics:true,size:20,color:'64605A'},{spacing:{after:100}}));
+  }
+  children.push(heading('Le coin maths','pink'));
+  children.push(line(m.mathCorner.title,{bold:true,size:22},{spacing:{after:20}}));
+  children.push(line(`Objectif : ${m.mathCorner.objective}`,{size:21,color:'4A4F45'},{spacing:{after:140}}));
+ }
+ if(seq.warning)children.push(line(seq.warning,{italics:true,size:20,color:'8D5E00'},{shading:{fill:'FFF5DB',type:ShadingType.CLEAR},indent:{left:160,right:160},spacing:{before:140,after:140}}));
+ const cited=resourcePageNumbers(seq.materials);
+ if(cited.length){
+  children.push(new Paragraph({
+   heading:HeadingLevel.HEADING_1,children:[text('Ressources',{bold:true,color:'FFFFFF',size:25})],
+   keepNext:true,spacing:{before:230,after:140,line:300},indent:{left:160,right:160},
+   shading:{fill:'2C7195',type:ShadingType.CLEAR},border:{left:{color:'2C7195',style:BorderStyle.SINGLE,size:15,space:8}}
+  }));
+  for(const pageNumber of cited){
+   const image=await resourcePagePng(seq.level,pageNumber);
+   if(!image)continue;
+   const maxWidth=560,scale=Math.min(1,maxWidth/image.width);
+   children.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:80,after:30},children:[new ImageRun({type:'png',data:image.data,transformation:{width:Math.round(image.width*scale),height:Math.round(image.height*scale)}})]}));
+   children.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:160},children:[text(`Ressources, p. ${pageNumber}`,{size:16,color:'64605A'})]}));
+  }
+ }
+ const document=new Document({
+  creator:'Maths en poche',title:seq.title,description:`Vue d’ensemble · ${sourceCaption(seq)}`,
+  styles:{default:{document:{run:{font:FONT,size:22,color:'30343A'},paragraph:{spacing:{after:85,line:290}}}}},
+  numbering:{config:[{reference:'manual-bullets',levels:[{level:0,format:LevelFormat.BULLET,text:'•',alignment:AlignmentType.LEFT,style:{paragraph:{indent:{left:260,hanging:180}},run:{font:FONT}}}]}]},
+  sections:[{properties:{page:{size:{width:11906,height:16838},margin:{top:760,bottom:900,left:760,right:760,header:300,footer:360}}},children}]
+ });
+ return new Uint8Array(await Packer.toArrayBuffer(document));
+}
+export async function exportSourceDocx(seq:Sequence):Promise<void>{
+ download(await createSourceDocx(seq),`guide-${seq.id}.docx`,'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
 }
