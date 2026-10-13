@@ -1,0 +1,163 @@
+/* The guide's visual language, reflowed for a phone rather than scaled down. */
+:root { --manual-orange: #b65317; --manual-yellow: #eeb525; --manual-cream: #fff5db; }
+app-manual-overview, app-manual-page { display: block; }
+.manual-overview { background: #fff; border: 1px solid #e8dfd1; border-radius: 12px; overflow: hidden; color: #2f3338; font-size: 17px; line-height: 1.7; }
+.manual-intro { background: var(--manual-cream); border-top: 15px solid var(--manual-yellow); padding: 28px 34px 36px; }
+.manual-title-row { display: grid; grid-template-columns: 116px minmax(0,1fr); gap: 28px; align-items: start; }
+.manual-period { display: flex; flex-direction: column; align-items: center; color: #fff; background: var(--manual-orange); border-radius: 60px 60px 18px 18px; padding: 18px 5px 0; box-shadow: 0 0 0 3px #f7d688; margin-top: 6px; text-align: center; }
+.manual-period > span { font-size: 13px; text-transform: uppercase; font-weight: 700; }
+.manual-period strong { font-size: 52px; line-height: 1.2; }
+.manual-period b { font-size: 14px; width: calc(100% + 8px); background: var(--manual-orange); border: 4px solid var(--manual-cream); border-radius: 18px; padding: 3px 2px; margin-top: 12px; white-space: nowrap; }
+.manual-level { color: #925124; text-transform: uppercase; letter-spacing: 1.3px; font-size: 11px; font-weight: 700; }
+.manual-title h3 { color: var(--manual-orange); font-size: 32px; line-height: 1.22; font-weight: 750; margin: 6px 0 20px; letter-spacing: -.6px; text-wrap: pretty; }
+.manual-objectives { border-radius: 18px 0 18px 0; color: #fff; background: var(--manual-orange); padding: 16px 20px; font-size: 15px; }
+.manual-objectives > strong { display: block; text-transform: uppercase; letter-spacing: .7px; font-size: 11px; margin-bottom: 6px; }
+.manual-objectives ul { margin: 0; padding-left: 17px; }
+.manual-objectives li + li { margin-top: 6px; }
+.manual-teacher { position: relative; margin-top: 34px; padding: 0 20px 16px; border-left: 3px solid #e7b024; border-bottom: 3px solid #e7b024; border-radius: 0 0 24px 0; }
+.manual-teacher h4 { font-size: 21px; color: #8d5e00; line-height: 1.4; margin: 0 0 18px -23px; padding-left: 22px; border-left: 9px solid #e7b024; }
+.manual-teacher .reading-prose { columns: 2; column-gap: 32px; column-rule: 1px solid #eccd79; color: #3e382c; font-size: 16px; line-height: 1.75; }
+.manual-teacher .reading-prose p { margin-bottom: 16px; }
+.manual-teacher .reading-prose p::before { content: '• '; color: #9c6700; font-weight: 700; }
+.manual-week-title { position: relative; width: fit-content; max-width: calc(100% - 32px); margin: -17px auto 36px; background: var(--manual-orange); color: #fff; border-radius: 4px 4px 16px 16px; box-shadow: 0 4px 0 #e4d3b6; padding: 12px 26px; font-size: 19px; text-align: center; line-height: 1.4; }
+.manual-week-grid { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); grid-template-areas: 'rituals workshops' 'collective workshops' '. maths'; gap: 32px 28px; padding: 4px 34px 16px; align-items: start; }
+.manual-panel { --rubric: #406981; --rubric-border: #62a6c9; --rubric-pale: #eef8fe; border: 1.5px solid var(--rubric-border); border-radius: 18px; padding: 22px 18px 16px; position: relative; min-width: 0; }
+.manual-panel > h4 { font-size: 16px; width: fit-content; max-width: calc(100% - 28px); line-height: 1.4; padding: 3px 13px; color: #fff; background: var(--rubric); border-radius: 16px; margin: -37px auto 14px; text-align: center; position: relative; }
+.manual-rituals { grid-area: rituals; --rubric:#2c7195; --rubric-border:#67b4d7; }
+.manual-collective { grid-area: collective; --rubric:#507e2a; --rubric-border:#8db747; }
+.manual-workshops { grid-area: workshops; --rubric:#735897; --rubric-border:#9b83b8; }
+.manual-maths { grid-area: maths; --rubric:#aa377a; --rubric-border:#ce69a3; background: #fbedf5; border-width: 0 4px 4px; border-radius: 18px 0 18px 0; }
+.manual-panel ul { padding-left: 18px; margin: 0; }
+.manual-panel li { padding-left: 2px; margin-bottom: 8px; }
+.manual-panel li::marker { color: var(--rubric); }
+.manual-panel p { color: #33343a; font-size: 15px; line-height: 1.65; margin: 7px 0 0; }
+.manual-panel b { font-weight: 650; }
+.manual-link { display: flex; justify-content: space-between; align-items: center; color: var(--rubric); width: 100%; min-height: 44px; font-size: 14px; text-align: left; margin-top: 12px; border-top: 1px solid #d0e7f4; font-weight: 650; }
+.manual-days { list-style: none; margin: 0; padding: 0; }
+.manual-days li { padding: 0; margin: 0; }
+.manual-days button { display: grid; grid-template-columns: 53px minmax(0,1fr); gap: 9px; padding: 10px 0; width: 100%; text-align: left; font-size: 15px; line-height: 1.55; }
+.manual-days button > span { color: var(--rubric); font-weight: 750; white-space: nowrap; }
+.manual-days button > strong { font-weight: 450; color: #333a2c; }
+.manual-workshop + .manual-workshop { border-top: 1px solid #e7e0ef; margin-top: 14px; padding-top: 13px; }
+.manual-workshop button { width: 100%; text-align: left; color: var(--rubric); line-height: 1.6; min-height: 44px; }
+.manual-role { display: inline-block; border: 1px solid var(--rubric-border); color: var(--rubric); border-radius: 20px; padding: 1px 8px; font-size: 12px; font-weight: 650; margin: 0 7px 5px 0; vertical-align: middle; }
+.manual-workshop button strong { font-size: 16px; font-weight: 650; }
+.manual-corner-title { color: var(--rubric); font-size: 17px; font-weight: 650; text-align: left; line-height: 1.6; min-height: 44px; }
+.manual-panel button:hover { text-decoration: underline; text-underline-offset: 3px; }
+.manual-page-number { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 20px 15px; }
+.manual-page-number > span { background: #f5c752; color: #694b00; border-radius: 50%; min-width: 32px; height: 32px; font-size: 13px; display: grid; place-items: center; font-weight: 700; }
+.manual-page-number small { font-size: 11px; color: #64605a; }
+
+/* Colour tabs, materials sidebars, numbered stages and spoken prompts. */
+.manual-document { color: #30343a; line-height: 1.8; }
+[data-theme=rituals] { --rubric:#2c7195; --rubric-border:#67b4d7; --rubric-pale:#eff8fc; --rubric-material:#e3f2fa; }
+[data-theme=collective] { --rubric:#507e2a; --rubric-border:#8db747; --rubric-pale:#f2f8e7; --rubric-material:#e8f0d5; }
+[data-theme=workshops] { --rubric:#735897; --rubric-border:#9b83b8; --rubric-pale:#f7f3fb; --rubric-material:#eee7f6; }
+[data-theme=maths] { --rubric:#aa377a; --rubric-border:#ce69a3; --rubric-pale:#fceff6; --rubric-material:#f5e1ee; }
+[data-theme=overview] { --rubric:#a55219; --rubric-border:#d99037; --rubric-pale:#fff5e2; --rubric-material:#fff0d5; }
+.manual-page-canvas { max-width: none; padding: 30px; }
+.manual-page-canvas:has(app-manual-overview) { padding: 0; border: 0; background: transparent; }
+.manual-document-title { width: fit-content; max-width: 100%; margin: 0 0 36px; border-radius: 24px 24px 24px 4px; padding: 12px 24px; background: var(--rubric); color: white; font-size: 1.4em; line-height: 1.4; text-wrap: pretty; }
+.manual-lesson { margin-bottom: 35px; padding-top: 10px; border-top: 2px solid var(--rubric-border); }
+.manual-lesson:last-child { margin-bottom: 0; }
+.manual-lesson-title { margin: 0 0 22px; padding: 10px 15px; border-radius: 0 16px 16px 0; color: var(--rubric); background: var(--rubric-pale); font-size: 1.15em; line-height: 1.5; font-weight: 700; }
+.manual-lesson-layout { display: flow-root; }
+.manual-materials { float: right; width: 30%; margin: 0 0 22px 25px; background: var(--rubric-material); border-radius: 0 0 18px 0; padding: 0 15px 16px; color: var(--rubric); font-size: .84em; line-height: 1.7; overflow-wrap: anywhere; }
+.manual-materials h5 { text-align: center; margin: 0 -15px 12px; padding: 5px 10px; color: var(--rubric); background: color-mix(in srgb, var(--rubric-border) 24%, transparent); font-size: 1em; font-weight: 750; }
+.manual-materials .reading-prose { color: var(--rubric); line-height: 1.65; }
+.manual-materials .reading-list { padding-left: 15px; margin: 0; }
+.manual-materials .reading-list li { line-height: 1.65; padding-left: 0; }
+.manual-materials .reading-list li + li { margin-top: 5px; }
+.manual-materials .reading-list li::marker { color: var(--rubric); }
+.manual-materials .reading-heading { display: none; }
+.manual-lesson-body p { font-size: 1em; color: #30343a; line-height: 1.8; margin: 0 0 16px; }
+.manual-lesson-body .manual-rubric { color: var(--rubric); width: fit-content; font-size: 1em; line-height: 1.45; padding: 2px 7px; background: var(--rubric-pale); border-left: 3px solid var(--rubric-border); margin: 25px 0 14px; }
+.manual-lesson-body > :first-child { margin-top: 0; }
+.manual-step { color: var(--rubric); font-size: 1em; line-height: 1.6; margin: 26px 0 14px; padding: 8px 12px; border: 1px solid var(--rubric-border); border-radius: 14px 14px 14px 2px; width: fit-content; max-width: 100%; }
+.manual-lesson-body .manual-lesson-objective { color: var(--rubric); font-weight: 600; background: var(--rubric-pale); padding: 12px 15px; border-left: 3px solid var(--rubric-border); margin: 0 0 22px; }
+.manual-bullet { display: flex; align-items: baseline; gap: 8px; }
+.manual-bullet > span { color: var(--rubric); font-weight: 750; flex-shrink: 0; }
+.manual-bullet p { flex: 1; min-width: 0; }
+.manual-lesson-body .manual-quote { color: #4f5296; font-style: italic; padding-left: 14px; border-left: 2px solid #ccd0e9; }
+.manual-day-table { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); clear: both; gap: 0; margin: 24px 0; border: 1px solid #d2ddec; border-radius: 12px; overflow: hidden; }
+.manual-day-table > div { padding: 13px; background: #f6f9fd; border-right: 1px solid #d2ddec; font-size: .85em; }
+.manual-day-table > div:last-child { border-right: 0; }
+.manual-day-table .reading-prose { color: #454985; line-height: 1.7; }
+.manual-day-table .reading-step { margin: 0 0 12px; display: block; font-weight: 500; }
+.manual-day-table .reading-step span { display: block; width: fit-content; margin-bottom: 12px; color: #8b5318; background: #faedcf; font-weight: 700; }
+.source-shortcuts button:nth-child(2) { color: #2c7195; border-color: #90c6e2; }
+.source-shortcuts button:nth-child(3) { color: #507e2a; border-color: #a4bf80; }
+.source-shortcuts button:nth-child(n+4) { color: #735897; border-color: #b8a2d0; }
+.source-shortcuts button.active { background: #fff3d7; color: #8c4e13; border-color: #c59142; }
+.manual-overview ~ details { margin-top: 22px; }
+.hero { background: #fff4dc; border-color: #ecd9b2; }
+.hero .eyebrow { color: #8d591c; }
+.hero h1 { color: #704419; }
+.hero .hero-facts { color: #765932; }
+
+@media (max-width: 760px) {
+ .manual-overview { font-size: 17px; border-radius: 9px; }
+ .manual-intro { padding: 23px 20px 32px; border-top-width: 10px; }
+ .manual-title-row { grid-template-columns: 75px minmax(0,1fr); gap: 17px; }
+ .manual-period { padding-top: 13px; }
+ .manual-period > span { font-size: 10px; }
+ .manual-period strong { font-size: 36px; }
+ .manual-period b { font-size: 10px; padding: 4px 0; margin-top: 6px; }
+ .manual-title h3 { font-size: 25px; margin: 6px 0 0; line-height: 1.3; }
+ .manual-level { font-size: 10px; letter-spacing: .6px; }
+ .manual-title { display: contents; }
+ .manual-title .manual-level { display: none; }
+ .manual-title h3 { align-self: center; }
+ .manual-objectives { grid-column: 1/-1; padding: 17px; font-size: 16px; margin-top: 6px; }
+ .manual-objectives > strong { font-size: 10px; }
+ .manual-teacher { margin-top: 28px; padding: 0 0 12px 15px; }
+ .manual-teacher h4 { font-size: 19px; margin-left: -18px; padding-left: 12px; }
+ .manual-teacher .reading-prose { columns: 1; font-size: 17px; line-height: 1.8; }
+ .manual-week-title { font-size: 17px; padding: 12px 17px; margin-bottom: 34px; }
+ .manual-week-grid { grid-template-columns: 1fr; grid-template-areas: 'rituals' 'collective' 'workshops' 'maths'; padding: 6px 20px 10px; gap: 33px; }
+ .manual-panel { padding: 22px 18px 16px; }
+ .manual-panel > h4 { font-size: 16px; max-width: calc(100% + 10px); }
+ .manual-panel p { font-size: 16px; }
+ .manual-workshop button strong { font-size: 17px; }
+ .manual-days button { font-size: 16px; grid-template-columns: 52px minmax(0,1fr); }
+ .manual-role { font-size: 13px; }
+ .manual-page-canvas { padding: 24px 18px; }
+ .manual-document-title { font-size: 1.25em; padding: 12px 17px; margin-bottom: 27px; }
+ .manual-lesson-title { font-size: 1.1em; padding: 10px 12px; }
+ .manual-materials { float: none; width: 100%; margin: 0 0 24px; font-size: .92em; padding: 0 17px 17px; }
+ .manual-materials h5 { margin: 0 -17px 12px; }
+ .manual-day-table { grid-template-columns: 1fr; }
+ .manual-day-table > div { font-size: 1em; border-right: 0; border-bottom: 1px solid #d2ddec; padding: 17px; }
+ .manual-day-table > div:last-child { border-bottom: 0; }
+ .manual-lesson-body .manual-rubric { margin-top: 23px; }
+}
+@media (max-width: 370px) {
+ .manual-intro { padding-left: 15px; padding-right: 15px; }
+ .manual-title-row { grid-template-columns: 65px minmax(0,1fr); gap: 13px; }
+ .manual-title h3 { font-size: 23px; }
+ .manual-week-grid { padding-left: 15px; padding-right: 15px; }
+ .manual-panel { padding-left: 14px; padding-right: 14px; }
+ .manual-panel > h4 { font-size: 15px; padding-left: 9px; padding-right: 9px; }
+}
+.manual-workshop-note { display: block; color: #735897; font-size: 13px; margin-top: 6px; }
+.page-text .manual-overview .manual-teacher .reading-prose,
+.page-text .manual-overview .manual-panel ul,
+.page-text .manual-overview .manual-panel p,
+.page-text .manual-overview .manual-days button,
+.page-text .manual-overview .manual-workshop button strong { font-size: var(--reading-size); }
+.manual-panel button { background: transparent; border: 0; border-radius: 5px; }
+.manual-panel .manual-link { border-top: 1px solid #d0e7f4; border-radius: 0; }
+.manual-week-grid { grid-template-areas: 'rituals workshops' 'collective workshops' 'maths maths'; }
+.manual-maths { width: min(100%, 460px); justify-self: center; }
+@media (max-width: 760px) {
+ .manual-week-grid { grid-template-areas: 'rituals' 'collective' 'workshops' 'maths'; }
+}
+.export-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.editor-intro { flex-wrap: wrap; gap: 16px; }
+.export-help { color: #635b4c; font-size: 14px; margin: 16px 0 0; line-height: 1.7; }
+.export-buttons .button.secondary { background: #fff8e8; border-color: #d9b574; color: #815015; }
+@media (max-width: 760px) {
+ .export-buttons { width: 100%; }
+ .export-buttons .button { flex: 1 1 100%; justify-content: center; }
+ .export-help { font-size: 14px; }
+}

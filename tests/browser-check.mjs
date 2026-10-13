@@ -1,0 +1,31 @@
+import {createRequire} from 'node:module';import fs from 'node:fs/promises';import assert from 'node:assert/strict';
+const require=createRequire(process.env.PLAYWRIGHT_PACKAGE || import.meta.url);const {chromium}=require('playwright');
+const browser=await chromium.launch({headless:true,channel:process.env.BROWSER_CHANNEL||'chrome'});
+const context=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await fs.mkdir('tmp/qa',{recursive:true});
+try {
+ await page.goto('http://localhost:4200');await page.locator('.sequence-card').first().waitFor();assert.equal(await page.locator('.sequence-card').count(),24);
+ await page.screenshot({path:'tmp/qa/desktop.png'});
+ await page.getByRole('button',{name:'MS',exact:true}).click();await page.waitForFunction(()=>document.querySelectorAll('.sequence-card').length===12);
+ await page.getByRole('combobox',{name:'Période',exact:true}).selectOption('2');await page.waitForFunction(()=>document.querySelectorAll('.sequence-card').length===6);
+ await page.getByRole('combobox',{name:'Domaine',exact:true}).selectOption('Grandeurs');await page.getByRole('searchbox',{name:'Rechercher une séquence',exact:true}).fill('masses');await page.waitForFunction(()=>document.querySelectorAll('.sequence-card').length===1);
+ await page.getByRole('button',{name:'Ajouter aux favoris : Les masses'}).click();
+ await page.locator('.card-main').click();await page.getByRole('button',{name:'Préparer ma fiche',exact:true}).click();
+ await page.getByRole('textbox',{name:'Notes personnelles',exact:true}).fill('Groupe bleu : prévoir une deuxième balance. Vérifier la comparaison lourd / léger.');
+ await page.getByRole('textbox',{name:'Évaluation',exact:true}).fill('L’élève compare deux objets et justifie sa réponse.');
+ const download=page.waitForEvent('download');await page.getByRole('button',{name:'Exporter en PDF',exact:true}).click();await (await download).saveAs('tmp/qa/fiche-test.pdf');
+ await page.getByRole('button',{name:'Lire le guide',exact:true}).click();await page.locator('.page-text:visible').waitFor();assert.match(await page.locator('.page-text:visible').innerText(),/masses/);
+ await page.getByRole('button',{name:'Page originale',exact:true}).click();await page.locator('.page-image img:visible').waitFor();await page.waitForFunction(()=>document.querySelector('dialog[open] .page-image img').naturalWidth>0);
+ await page.screenshot({path:'tmp/qa/reader.png'});
+ await page.getByRole('button',{name:'Vue d’ensemble',exact:true}).first().click();
+ const original=page.waitForEvent('download');await page.getByRole('button',{name:'Exporter les 6 pages du guide',exact:true}).click();await (await original).saveAs('tmp/qa/source-test.pdf');
+ await page.getByRole('button',{name:'Fermer la séquence'}).click();await page.reload();await page.locator('.sequence-card').first().waitFor();
+ await page.locator('.sidebar').getByRole('button',{name:/Mes préparations/}).click();await page.locator('.prep-title').waitFor();assert.equal(await page.locator('.prep-title').count(),1);await page.locator('.prep-title').click();assert.match(await page.getByRole('textbox',{name:'Notes personnelles',exact:true}).inputValue(),/Groupe bleu/);await page.getByRole('button',{name:'Fermer la séquence'}).click();
+ await page.locator('.sidebar').getByRole('button',{name:'Mes guides',exact:true}).click();await page.getByRole('button',{name:'Ouvrir le guide',exact:true}).first().click();await page.getByRole('searchbox',{name:'Rechercher dans le guide',exact:true}).fill('énigme');await page.waitForFunction(()=>document.querySelectorAll('.search-results button').length>0);await page.getByRole('button',{name:'Fermer le guide'}).click();
+ await page.evaluate(()=>navigator.serviceWorker.ready);await page.reload();await page.locator('.sequence-card').first().waitFor();console.log('PASS: filters, PDF exports, persistence and guide search');
+ await page.locator('.sidebar').getByRole('button',{name:'Mes guides',exact:true}).click();await page.getByRole('button',{name:'Garder tout hors connexion',exact:true}).first().click();await page.getByRole('button',{name:'Disponible hors connexion',exact:true}).waitFor({timeout:60000});console.log('PASS: full PS guide downloaded for offline access');
+ await context.setOffline(true);await page.reload();await page.locator('.sequence-card').first().waitFor();assert.equal(await page.locator('.sequence-card').count(),24);await page.locator('.card-main').first().click();await page.getByRole('button',{name:'Lire le guide',exact:true}).click();await page.getByRole('button',{name:'Texte',exact:true}).click();assert.ok((await page.locator('.page-text:visible').innerText()).length>100);await page.getByRole('button',{name:'Page originale',exact:true}).click();await page.waitForFunction(()=>document.querySelector('dialog[open] .page-image img')?.naturalWidth>0);await page.getByRole('button',{name:'Fermer la séquence'}).click();await context.setOffline(false);
+ await page.setViewportSize({width:390,height:844});await page.reload();await page.locator('.sequence-card').first().waitFor();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:'tmp/qa/mobile.png'});
+ await page.locator('.mobile-nav').getByRole('button',{name:'Mes fiches',exact:true}).click();await page.locator('.prep-title').click();await page.screenshot({path:'tmp/qa/mobile-editor.png'});assert.ok(await page.evaluate(()=>document.querySelector('dialog[open]').scrollWidth<=innerWidth));
+ assert.deepEqual(errors,[]);console.log('PASS: desktop, mobile, filters, favorites, text search, original pages, PDF exports, persistence and offline text.');
+}catch(error){await page.screenshot({path:'tmp/qa/failure.png'});console.error('PAGE ERRORS',errors);throw error;}finally{await browser.close();}

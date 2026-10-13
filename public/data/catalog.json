@@ -1,0 +1,1667 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "level": "PS",
+      "pages": 108,
+      "file": "guides/ps.pdf",
+      "name": "Outils pour les Maths PS",
+      "publisher": "Magnard",
+      "year": 2026
+    },
+    {
+      "level": "MS",
+      "pages": 108,
+      "file": "guides/ms.pdf",
+      "name": "Outils pour les Maths MS",
+      "publisher": "Magnard",
+      "year": 2025
+    }
+  ],
+  "sequences": [
+    {
+      "id": "ps-p1-s1",
+      "level": "PS",
+      "period": 1,
+      "week": 1,
+      "title": "Manipuler des objets",
+      "domain": "Formes",
+      "start": 35,
+      "end": 40,
+      "objectives": "Reconnaitre, trier et classer des objets selon leur forme. Percevoir l’invariance de la forme d’un objet par rapport aux déplacements qu’il peut subir.",
+      "summary": "Cette semaine, nous allons apprendre à manipuler et à explorer des objets et des formes.",
+      "didactic": "Dès les premiers apprentissages de la vie, un\nenfant apprend en interagissant avec son environnement. Il construit ses premières connaissances\net ses premiers savoir-faire par l’observation,\nl’imitation et l’expérimentation. Jusqu’à 2 ans,\nl’enfant traverse le stade sensorimoteur de son\névolution cognitive : il a besoin de manipuler les\nobjets qui l’entourent pour expérimenter leurs\npropriétés en utilisant tous ses sens, afin d’en\ncomprendre progressivement les caractéristiques.\nC’est à ce stade qu’il acquiert la connaissance de\nla permanence de l’objet : il découvre qu’un objet\nexiste toujours, même quand il n’est plus dans son\nchamp de vision.\n•• Puis, vient la phase préopératoire de son développement : il entre à l’école maternelle, développe petit à petit son langage et découvre progressivement\nle symbolisme et donc l’abstraction. Cependant,\nla manipulation, basée sur l’expérimentation\nphysique et sensorielle, l’analyse de ses actions\net de leur résultat, reste le point de départ indispensable pour entrer dans tout apprentissage.\n•• Il est alors essentiel que l’enseignant·e permette\nà l’élève d’aller plus loin dans sa construction cognitive. Tout d’abord, placer l’élève en apprenant :\nproposer des situations d’expérimentation de\nson environnement qui l’amènent dans sa zone\nproximale de développement, c’est-à-dire plus\nloin que ce qu’il est en mesure de réaliser seul, pour\nqu’il apprenne de nouvelles choses, sans proposer\nune situation inaccessible. L’élève apprend alors\nen interagissant avec ses camarades et les adultes.\nL’enseignant·e verbalise ainsi la manipulation,\naccompagnant le passage de la manipulation\nvers la modélisation et l’abstraction.\n•• Sur ces principes, la manipulation des objets\npermettra à l’élève d’appréhender l’espace qui\nl’entoure (dimensions, orientations…), pour développer ses connaissances et sa logique spatiales.\nL’élève s’affranchira des caractéristiques variables,\ntelles que la couleur et la texture d’un objet, pour\nen dégager progressivement les caractéristiques\ngéométriques.",
+      "materials": "• Affiche avec 1 emplacement par photo d’élève\n• Photos plastifiées des élèves\n\n• Kira\n• Plusieurs autres peluches\n• 1 carton\n• Petits solides\n\n• Comptine « Les 3 koalas » (Ressources, p. 55)\n\n• Sac en tissu\n• Objets de dinette faciles à reconnaitre au toucher : fourchette, cuillère, verre, petit bol.\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « Manipuler des objets » (Mémo, p. 3)\n• Puzzle à encastrements\n\n• Kira\n• 1 carton\n• Objets de dinette variés (cuillères, assiettes, fruits, légumes…)\n• Solides et formes planes\n\n• Kira\n• Un seau à formes solides et les solides associés\n\n• Seaux ou boites contenant différents solides (cube, cylindre, boule, pyramide…)\n• Mon cahier de maths, couverture et p. 3 www.lienmini.fr/4775cah\n• Gommettes de la classe de formes variées\n\n• 2 jeux de construction de matières différentes (mousse et plastique, par exemple)\n\n• Puzzles à encastrements\n\n• Fruits et légumes de dinette\n• Petits paniers ou plats\n\n• 1 seau à formes solides\n• 1 puzzle à encastrements",
+      "flow": "• Jour 1 Contextualisation : « Le trésor de Kira »\n• Jour 2 Je devine avec mes mains\n• Jour 3 Le seau de Kira\n• Jour 4 Structuration\n\nATELIERS\nDirigé La maison des solides\nObjectif : manipuler et explorer des solides.\nMon cahier de maths (couverture et p. 3)\nSemi-dirigé Où est ma maison ?\nObjectif : manipuler et explorer des formes planes.\nAutonome 1 À toi de construire !\nObjectif : manipuler des pièces de construction variées.\nAutonome 2 À toi de cuisiner !\nObjectif : manipuler des objets de la dinette.\nÀ la bonne place !\nObjectif : réaliser des encastrements.",
+      "differentiation": "• Pour les élèves qui en ont besoin : proposer un seau à formes avec peu d’ouvertures\net guider la recherche.\n• Pour les élèves rapidement en réussite : ajouter un défi de rapidité.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La comptine segmentée de 1 à 3",
+          "Une place pour ma photo",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "La maison des solides",
+            "objective": "manipuler et explorer des solides.",
+            "note": "Mon cahier de maths (couverture et p. 3)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Où est ma maison ?",
+            "objective": "manipuler et explorer des formes planes."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "À toi de construire !",
+            "objective": "manipuler des pièces de construction variées."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "À toi de cuisiner !",
+            "objective": "manipuler des objets de la dinette."
+          }
+        ],
+        "mathCorner": {
+          "title": "À la bonne place !",
+          "objective": "réaliser des encastrements."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Le trésor de Kira »"
+          },
+          {
+            "number": 2,
+            "title": "Je devine avec mes mains"
+          },
+          {
+            "number": 3,
+            "title": "Le seau de Kira"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p1-s2",
+      "level": "PS",
+      "period": 1,
+      "week": 2,
+      "title": "Un peu, beaucoup",
+      "domain": "Nombres",
+      "start": 41,
+      "end": 46,
+      "objectives": "Comparer des quantités.",
+      "summary": "Cette semaine, nous allons apprendre à faire la différence entre « un peu » et « beaucoup ».",
+      "didactic": "Le premier contact d’un enfant avec les nombres\nest lié à la quantité (la cardinalité). Les études\nscientifiques montrent que les jeunes enfants,\ndès leurs premiers mois de vie, développent des\ncapacités d’intuition mathématique bien avant la\ncompréhension et l’utilisation des symboles qui y\nsont associés. Ils commencent notamment à être\ncapables de distinguer le « 1 » du « plusieurs »,\npuis deux quantités dont les cardinaux sont très\ndifférents : c’est ce que l’on appelle la quantification mathématique.\n•• L’enfant donne donc un premier sens mathématique aux collections en distinguant « un peu »\net « beaucoup ». Cette première perception du\nnombre est une base intuitive essentielle de\nconstruction des concepts mathématiques. Dans\ncette leçon, il s’agit d’apprendre à estimer globalement une quantité en distinguant « un peu » et\n« beaucoup » de façon consciente et verbalisée,\npour construire une première approche solide sur\nlaquelle les symboles mathématiques pourront\nêtre introduits.",
+      "materials": "• Kira\n• 2 paniers, 2 assiettes, 2 sachets et 2 casseroles\n• Fruits et légumes de dinette ou de comptage\n\n• Affiche avec 1 emplacement par photo d’élève\n• Photos plastifiées des élèves\n\n• Comptine « Les 3 koalas » (Ressources, p. 55)\n\n• Haricots rouges\n• 2 plateaux de 2 couleurs différentes\n• Sachets transparents (de type sachet de congélation)\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche « Un peu, beaucoup » (Mémo, p. 4)\n• Gommettes\n\n• Haricots rouges\n• 6 petites bouteilles opaques (de type yaourt à boire)\n• Les 2 plateaux du Jour 1 (avec les sachets déjà triés)\n\n• Haricots rouges\n• 6 petits sacs opaques\n• Les 2 plateaux des Jours 1 et 2 (avec les sachets et bouteilles déjà triés sur les plateaux)\n\n• Pois chiches\n• 12 sachets transparents (de type sachet de congélation) à remplir et 2 sachets vides par enfant\n• 8 petites bouteilles opaques (de type yaourt à boire)\n• 6 sacs opaques\n• 2 grands plateaux\n\n• 4 paniers pour l’adulte, 1 panier par élève\n• Fruits et légumes du coin dinette\n• Mon cahier de maths, p. 4 www.lienmini.fr/4775cah\n\n• Pâte à modeler\n• Rouleaux\n• Bouchons de feutres usagés ou bouchons de liège\n\n• 4 paniers\n• Fruits et légumes du coin dinette\n• Papier blanc ou étiquettes adhésives et gommettes\n\nMatériel par élève\n• Haricots\n• 1 petite bouteille opaque",
+      "flow": "• Jour 1 Contextualisation :\n« Les courses de Kira »\n• Jour 2 Le bruit des haricots\n• Jour 3 Les sacs de haricots\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les conserves de pois chiches\nObjectif : estimer, comparer et réaliser globalement\ndes quantités.\nSemi-dirigé La marchande\nObjectif : réaliser des collections correspondant à « un peu »\net « beaucoup ».\nMon cahier de maths (p. 4)\nAutonome 1 Les tartes aux fruits\nObjectif : réaliser une collection correspondant à « beaucoup ».\nAutonome 2 Les bouteilles de haricots\nObjectif : réaliser une collection correspondant à « beaucoup ».\nLes paniers de la marchande\nObjectif : réaliser des collections correspondant à « un peu » et « beaucoup ».",
+      "differentiation": "• Utiliser des écarts de quantité plus ou moins grands en fonction des possibilités des élèves.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La comptine segmentée de 1 à 3",
+          "Une place pour ma photo",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les conserves de pois chiches",
+            "objective": "estimer, comparer et réaliser globalement des quantités."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "La marchande",
+            "objective": "réaliser des collections correspondant à « un peu » et « beaucoup ».",
+            "note": "Mon cahier de maths (p. 4)"
+          },
+          {
+            "label": "Autonome 1",
+            "title": "Les tartes aux fruits",
+            "objective": "réaliser une collection correspondant à « beaucoup »."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Les bouteilles de haricots",
+            "objective": "réaliser une collection correspondant à « beaucoup »."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les paniers de la marchande",
+          "objective": "réaliser des collections correspondant à « un peu » et « beaucoup »."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les courses de Kira »"
+          },
+          {
+            "number": 2,
+            "title": "Le bruit des haricots"
+          },
+          {
+            "number": 3,
+            "title": "Les sacs de haricots"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p1-s3",
+      "level": "PS",
+      "period": 1,
+      "week": 3,
+      "title": "La correspondance terme à terme",
+      "domain": "Nombres",
+      "start": 47,
+      "end": 52,
+      "objectives": "Comparer des quantités.",
+      "summary": "Cette semaine, nous allons apprendre à associer un objet à un seul autre.",
+      "didactic": "La correspondance terme à terme consiste, à\npartir de deux collections, à associer n’importe\nquel élément d’une collection à un et un seul\nélément de la seconde collection. Cette action\nmathématique est le pilier de concepts mathématiques de base. Elle permettra notamment à\nl’élève, plus tard, d’être capable de compter en\nassociant chaque élément d’une collection à un\nmot-nombre, et constitue en ce sens l’un des\nprincipes fondamentaux du dénombrement.\nElle sera également l’outil de la compréhension\ndes premières comparaisons mathématiques,\nessentielles à la construction du sens du nombre.\n•• Dans cette séquence, il s’agit de construire les\nbases structurelles de la correspondance terme\nà terme au service des apprentissages mathématiques qui viendront ensuite.",
+      "materials": "• Kira et 3 peluches animaux\n• 4 feutres\n• 4 barres épurées (de type bâtons de brochette)\n\n• Affiche avec 1 emplacement par photo d’élève\n• Photos plastifiées des élèves\n\n• Comptine « Les 3 koalas » (Ressources, p. 55)\n\n• Kira et plusieurs autres peluches\n• 1 chaise par peluche\n\n• 1 feuille A4 ou A3\n• Une grosse poignée de jetons\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « La correspondance terme à terme » (Mémo, p. 5)\n• Étiquettes animaux à créer ou gommettes\n\n• 5 figurines d’animaux\n• 5 grosses briques de construction\n\n• 8 à 10 boites opaques avec couvercle (de type boite à camembert)\n• Figurines d’animaux\n• Mon cahier de maths, p. 5 www.lienmini.fr/4775cah\n\nMatériel par élève\n• Boites à œufs (découpées en ligne)\n• Petites figurines d’oursons\n• Jetons\n• Fiche « Le train » (Ressources, p. 100)\n\n• Pompons\n• 1 bac à glaçons par élève\n\nMatériel par élève\n• 1 boite à œufs (entre 6 et 12 alvéoles)\n• Pâte à modeler\n\n• Divers types de supports contenant des emplacements à cases\n• Objets figuratifs ou jetons",
+      "flow": "• Jour 1 Contextualisation :\n« L’école des animaux »\n• Jour 2 Une chaise pour chacun\n• Jour 3 1 pour 1\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les cabanes de la cour\nObjectif : par correspondance terme à terme, associer chaque\nemplacement à un et un seul objet (emplacements séparés et espacés).\nMon cahier de maths (p. 5)\nSemi-dirigé Le train de l’école\nObjectif : par correspondance terme à terme, associer chaque\nemplacement à un et un seul objet (disposition en ligne).\nAutonome 1 Les ballons\nObjectif : par correspondance terme à terme, associer chaque\nemplacement à un et un seul objet (disposition massée).\nAutonome 2 Le gouter des animaux\nObjectif : par correspondance terme à terme, associer chaque\nemplacement à un et un seul objet (disposition massée).\nUne place pour chacun\nObjectif : par correspondance terme à terme, associer chaque\nemplacement à un et un seul objet (disposition massée).",
+      "differentiation": "• Adapter le nombre de boites aux possibilités de chaque élève.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La comptine segmentée de 1 à 3",
+          "Une place pour ma photo",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les cabanes de la cour",
+            "objective": "par correspondance terme à terme, associer chaque emplacement à un et un seul objet (emplacements séparés et espacés).",
+            "note": "Mon cahier de maths (p. 5)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Le train de l’école",
+            "objective": "par correspondance terme à terme, associer chaque emplacement à un et un seul objet (disposition en ligne)."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "Les ballons",
+            "objective": "par correspondance terme à terme, associer chaque emplacement à un et un seul objet (disposition massée)."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Le gouter des animaux",
+            "objective": "par correspondance terme à terme, associer chaque emplacement à un et un seul objet (disposition massée)."
+          }
+        ],
+        "mathCorner": {
+          "title": "Une place pour chacun",
+          "objective": "par correspondance terme à terme, associer chaque emplacement à un et un seul objet (disposition massée)."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « L’école des animaux »"
+          },
+          {
+            "number": 2,
+            "title": "Une chaise pour chacun"
+          },
+          {
+            "number": 3,
+            "title": "1 pour 1"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p1-s4",
+      "level": "PS",
+      "period": 1,
+      "week": 4,
+      "title": "Se repérer dans la classe",
+      "domain": "Espace",
+      "start": 53,
+      "end": 58,
+      "objectives": "Dans un environnement bien connu, se repérer et se déplacer à partir de sa représentation.",
+      "summary": "Cette semaine, nous allons apprendre à reconnaitre et à nommer tous les coins de notre classe.",
+      "didactic": "Dès les premiers mois de sa vie, l’enfant découvre son espace en développant sa capacité\nà appréhender ce qui l’entoure, notamment par\nla construction de ses facultés psychomotrices.\nStructurer son espace, c’est être capable de se\nsituer, de s’orienter, de s’organiser et de se déplacer\ndans celui-ci.\n•• Cet apprentissage s’appuie sur les expériences\ncorporelles de l’enfant (l’expérience vécue) et par\nla manipulation (l’expérience manipulée). Dès sa\nnaissance, l’enfant traverse plusieurs phases de\nconstruction cognitive de l’espace :\n– les premiers mois de vie, il expérimente d’abord\nl’espace subi : il ne découvre son espace que par\nles mouvements imposés par son entourage.\n– ensuite, il expérimente l’espace vécu : il se\ndéplace, découvre et s’adapte de façon intuitive à celui-ci. Il construit alors naturellement\nles premières bases d’appréhension globale des\ndistances. Il conceptualise son espace en agissant\nà l’intérieur de celui-ci. Il vit alors son environnement sans le concevoir.\n– puis il construit l’espace perçu : il acquiert les\nbases nécessaires pour percevoir son environnement en se décentrant de celui-ci.\n•• Les élèves de Petite Section évoluent principalement dans l’espace vécu. Il s’agira dans cette\nséquence de construire de premières clés pour\namener les élèves aux portes de l’espace perçu.\n•• Le type d’espace privilégié en Petite Section sera\nle méso-espace, c’est-à-dire l’espace qui nous entoure et que l’on peut observer sans se déplacer.\nEn effet, aborder le macro-espace, c’est-à-dire\nl’espace trop vaste pour qu’on puisse l’observer\nsans se déplacer, impose la mobilisation d’une\nconceptualisation mentale qui complexifie la\ntâche.",
+      "materials": "• Kira\n• 2 pots de feutres\n• 2 barquettes de briques de construction\n• 2 feuilles de gommettes\n• 2 assiettes avec boules de pâte à modeler\n\n• Photos des coins de la classe\n• « Devine mon coin ! » (PDF) www.lienmini.fr/4775rit01\n\n• Photos grand format de chaque coin spécifique de la classe\n\n• Mémo des maths www.lienmini.fr/4775memo Fiches « Se repérer dans la classe », (Mémo, p. 6)\n• Étiquettes photos de chaque coin spécifique de la classe\n\n• Kira\n• Photos grand format de chaque coin spécifique de la classe (p. 55, Jour 2)\n• 2 objets trésors par coin de la classe, tous différents (grosses perles ou gros strass de couleurs variées, coffre, couronne, pièce d’or…)\n• Mon cahier de maths, p. 6 www.lienmini.fr/4775cah\n\n• 1 barquette contenant un objet spécifique de chaque coin de la classe\n• 1 deuxième barquette contenant un objet nouveau (gomme décorative, nouvel album de littérature jeunesse, etc.), spécifique de chaque coin de la classe\n\n• 1 barquette\n• 1 planche par élève de 6 photos d’objets de la classe connus\n\n• Objets pour maquette de la classe\n• Une petite figurine personnage par élève\n\n• 1 photo ou 1 illustration pour chaque coin de la classe\n• 1 petite barquette par photo\n• 1 plateau contenant un ou plusieurs objets spécifiques de chaque coin",
+      "flow": "• Jour 1 Contextualisation :\n« À la découverte de la classe »\n• Jour 2 L’album photo de la classe\n• Jour 3 Les objets cachés\n• Jour 4 Structuration\n\nATELIERS\nDirigé La chasse au trésor\nObjectif : identifier et nommer les coins spécifiques de la classe et\ndécouvrir leurs usages associés.\nMon cahier de maths (p. 6)\nSemi-dirigé Les coins de la classe\nObjectif : identifier et nommer les coins spécifiques de la classe et\ndécouvrir leurs usages associés.\nAutonome 1 La cueillette des objets\nObjectif : identifier l’emplacement d’objets spécifiques de la classe.\nAutonome 2 La maquette de la classe\nObjectif : manipuler une représentation de la classe sous forme\nde maquette.",
+      "differentiation": "• Guider verbalement l’identification avec des indices.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Les cubes des présents",
+          "Devine mon coin !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "La chasse au trésor",
+            "objective": "identifier et nommer les coins spécifiques de la classe et découvrir leurs usages associés.",
+            "note": "Mon cahier de maths (p. 6)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les coins de la classe",
+            "objective": "identifier et nommer les coins spécifiques de la classe et découvrir leurs usages associés."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "La cueillette des objets",
+            "objective": "identifier l’emplacement d’objets spécifiques de la classe."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "La maquette de la classe",
+            "objective": "manipuler une représentation de la classe sous forme de maquette."
+          }
+        ],
+        "mathCorner": {
+          "title": "En avant pour le rangement !",
+          "objective": "identifier l’emplacement d’objets spécifiques de la classe."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « À la découverte de la classe »"
+          },
+          {
+            "number": 2,
+            "title": "L’album photo de la classe"
+          },
+          {
+            "number": 3,
+            "title": "Les objets cachés"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p1-s5",
+      "level": "PS",
+      "period": 1,
+      "week": 5,
+      "title": "La quantité 1",
+      "domain": "Nombres",
+      "start": 59,
+      "end": 64,
+      "objectives": "Dénombrer une collection d’objets (jusqu’à 3, voire 4). Constituer une collection d’un cardinal donné (jusqu’à 3, voire 4). Associer une quantité, le nom d’un nombre et une écriture chiffrée.",
+      "summary": "Cette semaine, nous allons apprendre comment faire la quantité 1 et comment montrer 1 (compléter avec le geste du pouce associé).",
+      "didactic": "Dénombrer et constituer des collections permet\nde développer chez l’élève le sens du nombre :\nl’associer à une quantité lui confère une fonction\ncardinale. En Petite Section, l’élève va progressivement découvrir les principes fondamentaux du\ndénombrement, qui permettront de construire\npetit à petit l’abstraction des premiers concepts\nnumériques.\n•• Cette semaine, l’enseignant·e va réinvestir la\ncorrespondance terme à terme pour mettre en\nlumière ce que veut dire « un ». Le concept sousjacent est essentiel pour le développement cognitif mathématique de l’élève tout au long de sa\nscolarité : la construction des bases de la notion\nd’unité et donc du système de numération.\n•• L’élève consolidera alors la quantité 1 par plusieurs\ncanaux cognitifs :\n– 1, c’est lorsqu’on a une unité isolée, en opposition à plusieurs : il construit ici l’unité dans la\ncomparaison globale de quantités ;\n– 1, c’est lorsqu’on a une unité en dénombrant\n« un » : il construit l’unité par une première entrée\ndans le dénombrement ;\n– 1, c’est la quantité « un » reconnue visuellement\net globalement, sans comptage : il construit l’unité\npar subitizing.",
+      "materials": "• Kira et plusieurs autres peluches\n• Panier et noix\n• Jetons\n\n• Photos des coins de la classe\n• « Devine mon coin ! » (PDF) www.lienmini.fr/4775rit01\n\n• Une dizaine de noix\n• Kira et peluches de la classe\n\n• Mémo des maths www.lienmini.fr/4775memo\n• Fiche récapitulative « La roue du 1 » (Mémo, p. 7)\n\n• Petits paniers ou barquettes\n• Noix\n\n• Sachets transparents\n• Noix\n\n• Gommettes variées, dont rondes\n• 1 carré blanc par élève\n• Dés, cubes, noix\n• Le poster « La roue des nombres »\n• Cartes du 1 : Doigt, Dé, Réglette, Enfant, Cube, Perle (Ressources, p. 7, 9, 13, 15, 17, 21)\n• Mon cahier de maths, p. 7 www.lienmini.fr/4775cah\n\n• Vaisselle de dinette (assiettes, fourchettes, couteaux, cuillères, verres)\n• Noix\n\nMatériel par élève\n• Boite à œufs ou plateau à alvéoles (différentes tailles)\n• Noix\n• Une cuillère à café\n\n• Figurines d’animaux (taille moyenne)\n• Noix\n\nMatériel par élève\n• Dé\n• jeton",
+      "flow": "• Jour 1 Contextualisation :\n« Kira croque sa noix »\n• Jour 2 Un panier, une noix\n• Jour 3 Le sachet du 1\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les habits du 1\nObjectif : fréquenter les représentations du nombre 1.\nMon cahier de maths (p. 7)\nSemi-dirigé 1 dans l’assiette\nObjectif : dénombrer et constituer la quantité 1.\nAutonome 1 1 noix dans chaque case\nObjectif : constituer la quantité 1.\nAutonome 2 1 noix pour chaque animal\nObjectif : constituer la quantité 1.",
+      "differentiation": "• Pour les élèves qui en ont besoin : accompagner l’identification du 1 en attirant\nl’attention sur l’élément unique dans chaque représentation et en répétant\ndes formulations simples : Regarde, il y a un seul…\n• Pour les élèves rapidement en réussite : faire créer d’autres « habits du 1 ».",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Les cubes des présents",
+          "Devine mon coin !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les habits du 1",
+            "objective": "fréquenter les représentations du nombre 1.",
+            "note": "Mon cahier de maths (p. 7)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "1 dans l’assiette",
+            "objective": "dénombrer et constituer la quantité 1."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "1 noix dans chaque case",
+            "objective": "constituer la quantité 1."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "1 noix pour chaque animal",
+            "objective": "constituer la quantité 1."
+          }
+        ],
+        "mathCorner": {
+          "title": "La face 1",
+          "objective": "découvrir la constellation du dé représentant le nombre 1."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Kira croque sa noix »"
+          },
+          {
+            "number": 2,
+            "title": "Un panier, une noix"
+          },
+          {
+            "number": 3,
+            "title": "Le sachet du 1"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p1-s6",
+      "level": "PS",
+      "period": 1,
+      "week": 6,
+      "title": "Reproduire un motif",
+      "domain": "Motifs",
+      "start": 65,
+      "end": 70,
+      "objectives": "Reproduire un motif à l’identique.",
+      "summary": "Cette semaine, nous allons apprendre à reproduire des suites d’objets à partir d’un modèle.",
+      "didactic": "Les mathématiques construisent et entrainent\nles liens logiques de la pensée et développent\nl’abstraction. Parmi les piliers présentés dans les\nprogrammes en maternelle, les élèves sont notamment invités à se familiariser avec les motifs\norganisés.\n•• Un motif représente une organisation d’éléments suivant des règles précises. Cette première\nséquence permet aux élèves d’apprendre à identifier et à comprendre la construction de base du\nmodèle initial. La finalité de ces apprentissages\nconsistera à identifier et à appliquer les règles de\nprolongement d’un modèle.\n•• Pour reproduire une suite organisée, l’élève\ndoit comprendre que les objets sont placés les\nuns par rapport aux autres, en prenant notamment en compte la notion d’ordre. Cela conduit\nl’apprenant à percevoir un ensemble global en\nconsidérant les interactions entre ses éléments,\nsans faire l’écueil de considérer chaque élément\nde manière isolée. L’organisation n’intervient que\npar la prise en compte coordonnée de plusieurs\nitems en interaction.\n•• L’élève sera amené à reproduire des suites ordonnées afin d’identifier et de concevoir la structure\nd’un modèle de base, à mobiliser ensuite dans\nles suites organisées avec une règle de répétition\n(algorithmes).",
+      "materials": "• Kira et une autre peluche\n• Boutons de vêtements\n• Jetons\n• 2 paniers\n• 2 barquettes\n\n• Photos des coins de la classe\n• « Devine mon coin ! » (PDF) www.lienmini.fr/4775rit01\n\n• Ficelle\n• Vêtements de peluche en double exemplaire (2 pulls, 2 pantalons, 2 chaussettes)\n• Pinces à linge\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « Reproduire un motif » (Mémo, p. 8)\n• Étiquettes Pinces à linge (Ressources, p. 73)\n• Colle\n\nMatériel par élève\n• Figurines d’animaux (prévoir plusieurs animaux de la même espèce)\n• Modèle photo de file des figurines d’animaux\n\nMatériel par élève\n• Petites voitures\n• Modèle photo de file de voitures\n\nMatériel par élève\n• Pinces à linge de différentes couleurs (au moins 3 pour l’adulte)\n• Papier cartonné + 1 pour l’adulte\n• Mon cahier de maths, p. 8 www.lienmini.fr/4775cah\n\nMatériel par élève\n• Fils\n• Grosses perles de couleurs différentes\n\n• Jetons de différentes couleurs\n• Affiche modèle de la ligne des jetons",
+      "flow": "• Jour 1 Contextualisation :\n« La lessive de Kira »\n• Jour 2 La suite des gestes\n• Jour 3 La file des sons\n• Jour 4 Structuration\n\nATELIERS\nDirigé La file d’attente\nObjectif : reproduire une suite d’animaux à partir d’un modèle.\nSemi-dirigé Les pinces à linge\nObjectif : reproduire une suite de couleurs à partir d’un modèle.\nMon cahier de maths (p. 8)\nAutonome 1 L’embouteillage\nObjectif : reproduire une suite de voitures à partir d’un modèle.\nAutonome 2 Le collier\nObjectif : reproduire une suite de perles à partir d’un modèle.",
+      "differentiation": "• Pour les élèves rapidement en réussite, augmenter le nombre d’animaux de la file.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Les cubes des présents",
+          "Devine mon coin !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "La file d’attente",
+            "objective": "reproduire une suite d’animaux à partir d’un modèle."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les pinces à linge",
+            "objective": "reproduire une suite de couleurs à partir d’un modèle.",
+            "note": "Mon cahier de maths (p. 8)"
+          },
+          {
+            "label": "Autonome 1",
+            "title": "L’embouteillage",
+            "objective": "reproduire une suite de voitures à partir d’un modèle."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Le collier",
+            "objective": "reproduire une suite de perles à partir d’un modèle."
+          }
+        ],
+        "mathCorner": {
+          "title": "La ribambelle de jetons",
+          "objective": "reproduire une suite d’objets à partir d’un modèle 2D."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « La lessive de Kira »"
+          },
+          {
+            "number": 2,
+            "title": "La suite des gestes"
+          },
+          {
+            "number": 3,
+            "title": "La file des sons"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p2-s1",
+      "level": "PS",
+      "period": 2,
+      "week": 1,
+      "title": "Les collections jusqu’à 2",
+      "domain": "Nombres",
+      "start": 73,
+      "end": 78,
+      "objectives": "Comprendre qu’une quantité d’objets ne dépend ni de leur nature ni de leur organisation spatiale. Comprendre que si on ajoute un objet à une collection, le nombre qui désigne sa quantité est le suivant dans la suite orale des noms des nombres. Comprendre que dans la suite orale des nombres, chaque nombre s’obtient en ajoutant 1 au nombre précédent. Dénombrer une collection d’objets (jusqu’à 3, voire 4). Constituer une collection d’un cardinal donné (jusqu’à 3, voire 4).",
+      "summary": "Cette semaine, nous allons apprendre à compter jusqu’à 2.",
+      "didactic": "En PS, les élèves construisent une notion mathématique essentielle : le principe de cardinalité.\nIls découvrent que le dernier nombre énoncé\npendant le comptage correspond au nombre d’éléments de la collection. Afin d’éviter la récitation de\nla comptine numérique sans y donner de sens en\ntermes de quantité, les élèves seront systématiquement amenés vers la compréhension suivante :\najouter 1 donne une quantité correspondant au\nnombre suivant dans la suite orale des nombres.\nAinsi, on les guide vers le comptage-énumération\n(comptage-dénombrement) en opposition au\ncomptage-récitation (comptage-numérotage).\n•• Les élèves construisent donc les bases des cinq\nprincipes du dénombrement :\n1. Le principe d’ordre stable (les mots-nombres\nsont toujours récités dans le même ordre).\n2. Le principe de correspondance terme à terme (à\nchaque objet pointé correspond un mot-nombre).\n3. Le principe de cardinalité (le dernier motnombre prononcé est le nombre d’éléments que\ncontient la collection).\n4. Le principe d’abstraction (le cardinal de la collection est indépendant de la nature des objets).\n5. Le principe de non-pertinence de l’ordre (l’ordre\ndans lequel on dénombre les objets ne change\npas le cardinal de la collection).\n•• La répétition des actions de dénombrement et\nde constitution de collections permet à l’élève, sur\nde très petites quantités, de développer petit à\npetit la capacité à mobiliser une image mentale\nglobale de la quantité travaillée, et donc d’identifier\nou de produire un cardinal donné sans passer par\nle comptage : le subitizing.",
+      "materials": "• Kira\n• 2 feuilles d’automne\n• 1 cahier\n\n• Comptine « Bonjour l’automne ! » (Ressources, p. 56)\n\n• Feuilles d’automne de différentes tailles/formes/couleurs\n• 2 feuilles blanches A4\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « Les collections jusqu’à 2 » (Mémo, p. 9)\n• 2 feuilles d’automne (réelles ou réalisées avec une perforatrice)\n\n• Feuilles d’automne de différentes tailles/formes/couleurs\n• Pochettes plastique ou barquettes transparentes\n\n• Feuilles d’automne de différentes tailles/ formes/couleurs\n• Pochettes plastique ou barquettes transparentes\n\nMatériel par élève\n• 1 fiche « L’arbre d’automne » (Ressources, p. 101)\n• Petites feuilles d’automne (en plastique, en papier, ou réalisées avec une perforatrice)\n• Mon cahier de maths, p. 9 www.lienmini.fr/4775cah\n\nMatériel par élève\n• 1 boite à œufs (12 alvéoles)\n• Pompons\n• Une pince\n\n• Pâte à modeler\n• Petites barquettes\n\nMatériel par élève\n• Pâte à modeler\n• Petites barquettes\n\n• Grosses briques de construction ou cubes",
+      "flow": "• Jour 1 Contextualisation : « Les feuilles d’automne »\n• Jour 2 Notre collection de feuilles d’automne\n• Jour 3 Une ou deux feuilles d’automne ?\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les arbres d’automne\nObjectif : dénombrer et constituer des collections\nde 2 objets.\nMon cahier de maths (p. 9)\nSemi-dirigé Les paniers de pommes\nObjectif : dénombrer et constituer des collections\njusqu’à 2 objets.\nAutonome 1 La cueillette des raisins\nObjectif : constituer des collections de 2 objets.\nAutonome 2 Les vers de terre amoureux\nObjectif : constituer des collections de 2 objets.\nLes maisons des animaux de la forêt\nObjectif : constituer des collections de 2 objets.",
+      "differentiation": "• Pour les élèves qui en ont besoin, accompagner le comptage\npar la verbalisation.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La comptine « Bonjour l’automne ! »",
+          "En rang !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les arbres d’automne",
+            "objective": "dénombrer et constituer des collections de 2 objets.",
+            "note": "Mon cahier de maths (p. 9)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les paniers de pommes",
+            "objective": "dénombrer et constituer des collections jusqu’à 2 objets."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "La cueillette des raisins",
+            "objective": "constituer des collections de 2 objets."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Les vers de terre amoureux",
+            "objective": "constituer des collections de 2 objets."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les maisons des animaux de la forêt",
+          "objective": "constituer des collections de 2 objets."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les feuilles d’automne »"
+          },
+          {
+            "number": 2,
+            "title": "Notre collection de feuilles d’automne"
+          },
+          {
+            "number": 3,
+            "title": "Une ou deux feuilles d’automne ?"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p2-s2",
+      "level": "PS",
+      "period": 2,
+      "week": 2,
+      "title": "Les longueurs (1)",
+      "domain": "Grandeurs",
+      "start": 79,
+      "end": 84,
+      "objectives": "Reconnaitre un objet de même longueur qu’un objet donné. Comparer des objets selon leur longueur.",
+      "summary": "Cette semaine, nous allons apprendre à comparer des longueurs, c’est-à-dire à trouver les objets de même longueur, les plus grands et les plus petits.",
+      "didactic": "Dans le domaine des grandeurs mathématiques,\nle plus grand défi est de permettre à chaque élève\nde donner du sens à chacune des grandeurs. En\nPetite Section, comprendre ce qu’est une longueur\nsuppose que l’élève est capable de mobiliser des\ncompétences cognitives spécifiques dans le domaine de la perception visuelle et de l’appréhension de l’espace, puisqu’il peut donner du\nsens à cette caractéristique spécifique d’un objet.\n•• Pour cela, l’élève devra être capable de distinguer\nla grandeur elle-même des objets supports de\ncette grandeur. Dans un environnement cognitif\noù, au regard de son âge, l’élève apprend principalement par le vécu, la notion de longueur se\nconstruit progressivement à partir de situations\nmanipulées et observées. En maternelle, l’essentiel est donc de percevoir la grandeur travaillée.\n•• Par ces manipulations, l’élève va pouvoir vivre\nles questionnements du type « Combien ça mesure ? ». Des réponses comme « c’est plus long/\ncourt » et « c’est le plus long/court » permettront\naux élèves d’apprendre à caractériser la grandeur.\nOn restera vigilant quant aux expressions « c’est\nlong » et « c’est court », dont la valeur dépend\nnécessairement d’un référent.\n•• Les élèves de Petite Section sont d’abord invités à expérimenter des égalités de longueur\net des comparaisons de longueurs très différentes. Ils sont orientés vers l’apprentissage d’une\nestimation visuelle des longueurs qui permet la\nconstruction de référents mentaux essentiels à\nl’abstraction progressive de la grandeur.",
+      "materials": "• Kira\n• 4 paires de rubans de couleurs différentes (avec un grand écart de taille lundi et mardi, avec un faible écart de taille jeudi et vendredi).\n\n• Comptine « Bonjour l’automne ! » (Ressources, p. 56)\n\n• Kira\n• Une chute de tissu\n• 3 rubans, dont deux de la même longueur\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « Les longueurs (1) » (Mémo, p. 10)\n• Les écharpes de Kira (Ressources, p. 73)\n\n• 8 brins de laine de 4 longueurs très différentes et de même couleur, à appareiller 2 par 2\n\n• 2 écharpes de longueurs différentes\n• Kira\n• 1 autre peluche plus petite\n\nMatériel par élève\n• 8 rectangles de papier d’une seule couleur et de 4 longueurs différentes (longueurs égales deux à deux)\n• Mon cahier de maths, p. 10 www.lienmini.fr/4775cah\n\nMatériel par élève\n• 1 fiche « La place des rubans » (Ressources, p. 102)\n• 5 rubans de 2 cm, 5 cm, 10 cm, 15 cm, 20 cm, 1 couleur\n\n• Pâte à modeler\n• Sablier de 10 à 15 secondes\n\nMatériel par élève\n• 1 barquette\n• 4 à 5 paires de lacets de tailles différentes (de préférence 1 couleur de lacets par élève)\n\n• Plusieurs paires de rubans de même longueur 2 à 2, tous de même couleur",
+      "flow": "• Jour 1 Contextualisation :\n« L’atelier de couture »\n• Jour 2 Les brins de laine\n• Jour 3 Les écharpes\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les étiquettes de vêtements\nObjectif : comparer et apparier des longueurs.\nMon cahier de maths (p. 10)\nSemi-dirigé Les cordelettes\nObjectif : produire et comparer des longueurs.\nAutonome 1 Les places des rubans\nObjectif : comparer et apparier des longueurs.\nAutonome 2 Les paires de lacets\nObjectif : comparer et apparier des longueurs.\nLes paires de rubans\nObjectif : comparer et apparier des longueurs.",
+      "differentiation": "• À l’étape 2, adapter le nombre de paires d’étiquettes aux possibilités\nde chaque élève.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La comptine « Bonjour l’automne ! »",
+          "En rang !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les étiquettes de vêtements",
+            "objective": "comparer et apparier des longueurs.",
+            "note": "Mon cahier de maths (p. 10)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les cordelettes",
+            "objective": "produire et comparer des longueurs."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "Les places des rubans",
+            "objective": "comparer et apparier des longueurs."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Les paires de lacets",
+            "objective": "comparer et apparier des longueurs."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les paires de rubans",
+          "objective": "comparer et apparier des longueurs."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « L’atelier de couture »"
+          },
+          {
+            "number": 2,
+            "title": "Les brins de laine"
+          },
+          {
+            "number": 3,
+            "title": "Les écharpes"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p2-s3",
+      "level": "PS",
+      "period": 2,
+      "week": 3,
+      "title": "Les solides",
+      "domain": "Formes",
+      "start": 85,
+      "end": 90,
+      "objectives": "Reconnaitre, trier et classer des objets selon leur forme. Percevoir l’invariance de la forme d’un objet par rapport aux déplacements qu’il peut subir.",
+      "summary": "Cette semaine, nous allons apprendre à reconnaitre, à trier et à classer des objets.",
+      "didactic": "Conformément aux dernières recherches sur le\ndéveloppement de l’enfant, nous avons choisi de\ntravailler sur les solides avant les figures planes.\nLes solides constituent en effet l’entrée cognitive\nvers les figures planes, la géométrie dans l’espace\nprenant directement appui sur l’espace vécu de\nl’enfant.\n•• La géométrie dans l’espace est basée sur la vision\nen trois dimensions. Pour permettre aux élèves de\nPetite Section la découverte de celle-ci, il est donc\nessentiel de les laisser manipuler des solides réels\net des objets usuels en forme de boule, cylindre,\ncube et pyramide. Ces objets doivent être touchés, observés sous tous leurs angles et décrits\nde manière simple, avec des mots usuels, dans\nun premier temps. La rencontre avec un grand\nnombre de solides, dans des positions variées,\nest prédictive d’une bonne vision dans l’espace.\n•• Il est à noter que produire oralement le nom\ndes solides et le vocabulaire spécifique n’est pas\nune compétence attendue des élèves en fin de\nmaternelle, tout comme la reconnaissance des\nsolides représentés en deux dimensions.",
+      "materials": "• Kira\n• 2 plots\n• 2 jetons\n• 2 sacs opaques\n\n• Comptine « Bonjour l’automne ! » (Ressources, p. 56)\n\n• Parcours de motricité préparé en amont (ballons, blocs cubiques, rouleaux cylindriques, plots pointus rappelant les pyramides…)\n• Petits solides modélisants (boule, cube, cylindre, pyramide à base carrée)\n• Kira\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « Les solides » (Mémo, p. 11)\n• 4 photos des solides appariés (une photo par solide : boule, cube, cylindre, pyramide à base carrée) tes.\n\n• Kira\n• Petits solides (cube, boule, cylindre, pyramide à base carrée)\n• Barquettes contenant chacune un type de solide\n\n• Petits solides (cube, boule, cylindre, pyramide à base carrée)\n• Planche légèrement inclinée\n• 2 zones matérialisées au sol\n\n• Petits solides modélisants (cubes, cylindres, boules, pyramides à base carrée)\n• 4 sacs opaques contenant chacun un type de solide\n• Appareil photo/tablette\n• Mon cahier de maths, p. 11 www.lienmini.fr/4775cah\n• Photo des parcours jumeaux de l’étape 2\n\n• Éléments magnétiques type Geomag® ou Polydron®\n\n• Petits solides modélisants (cubes, boules, cylindres, pyramides à base carrée)\n• 2 zones matérialisées au sol (roule/ne roule pas)\n• 4 barquettes ou boites (une par type de solide).\n\n• Seaux à formes remplis de solides (boules, cubes, cylindres, pyramides)\n\n• Solides\n• Sacs opaques",
+      "flow": "• Jour 1 Contextualisation :\n« Le parcours de Kira »\n• Jour 2 Ça roule !\n• Jour 3 Chacun sa boite\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les mini-parcours\nObjectif : reconnaitre et apparier des solides selon leur forme.\nMon cahier de maths (p. 11)\nSemi-dirigé Le rangement de la salle de motricité\nObjectif : trier, classer des solides et percevoir l’invariance\nde la forme.\nAutonome 1 À toi d’assembler !\nObjectif : manipuler et apparier des solides.\nAutonome 2 À toi de trier !\nObjectif : trier et classer des solides.\nLes sacs mystères\nObjectif : reconnaitre les solides par la manipulation et la perception tactile.",
+      "differentiation": "• Adapter la longueur et la complexité du parcours en fonction des capacités\ndes élèves.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La comptine « Bonjour l’automne ! »",
+          "En rang !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les mini-parcours",
+            "objective": "reconnaitre et apparier des solides selon leur forme.",
+            "note": "Mon cahier de maths (p. 11)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Le rangement de la salle de motricité",
+            "objective": "trier, classer des solides et percevoir l’invariance de la forme."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "À toi d’assembler !",
+            "objective": "manipuler et apparier des solides."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "À toi de trier !",
+            "objective": "trier et classer des solides."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les sacs mystères",
+          "objective": "reconnaitre les solides par la manipulation et la perception tactile."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Le parcours de Kira »"
+          },
+          {
+            "number": 2,
+            "title": "Ça roule !"
+          },
+          {
+            "number": 3,
+            "title": "Chacun sa boite"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p2-s4",
+      "level": "PS",
+      "period": 2,
+      "week": 4,
+      "title": "Les représentations de 2",
+      "domain": "Nombres",
+      "start": 91,
+      "end": 96,
+      "objectives": "Dénombrer une collection d’objets (jusqu’à 3, voire 4). Constituer une collection d’un cardinal donné (jusqu’à 3, voire 4). Associer une quantité, le nom d’un nombre et une écriture chiffrée.",
+      "summary": "Cette semaine, nous allons découvrir les habits du nombre 2 (compléter avec le geste de 2 doigts en représentation analogique).",
+      "didactic": "L’apprentissage des nombres passe par le repérage des constellations ordonnées « classiques »\nconstituant des images mentales repères des\nquantités. Les constellations figurent des représentations analogiques des quantités, permettant de\ngarder la mémoire de celles-ci. Leur mobilisation\nreprésente une première étape vers l’abstraction\ndes quantités et la compréhension de la notion\nde nombre.\n•• La capacité à identifier un nombre et le passage\nd’une représentation d’un nombre à une autre\nsont des éléments de constitution de cette notion et des outils essentiels au calcul. Différents\nagencements permettent d’identifier le nombre 2,\npar exemple :\n– les doigts (image des doigts « 2 ») ;\n– les constellations du dé (image du dé « 2 ») ;\n– les points alignés (image de la barrette « 2 »).\n•• L’identification de ces agencements est d’abord\ninitiée par le comptage afin que l’association\ndevienne progressivement instantanée. Cette\nprocédure relève de la vision globale. Les élèves\nsont capables de reconnaitre directement de très\npetites quantités (subitizing) sans avoir recours\nau comptage.",
+      "materials": "• Petits solides à manipuler\n\n• Kira\n• 4 paires de brins de laine de couleurs différentes (avec un grand écart de taille lundi et mardi, avec un faible écart de taille jeudi et vendredi).\n\n• Une paire de chaussettes\n\n• Un gros dé\n\n• Mémo des maths : www.lienmini.fr/4775memo\n• Fiche récapitulative « La roue du 2 » (Mémo, p. 12)\n\n• Cartes du 2 : Doigts, Dés (Ressources, p. 7, 9)\n• 1 carte Paires de chaussettes (Ressources, p. 23)\n\n• Gommettes rondes de la classe\n• 1 carré blanc par élève\n• Dés\n• Le poster « La roue des nombres »\n• Cartes du 2 : Doigts, Dés, Réglettes, Cubes, Confettis, Perles (Ressources, p. 7, 9, 13, 17, 19, 21)\n• Mon cahier de maths, p. 12 www.lienmini.fr/4775cah\n\n• Petites chaussettes identiques en vrac\n• Cartes du 2 : Doigts, Dés, Paires de chaussettes (Ressources, p. 7, 9, 23).\n• 1 plateau par élève\n\n• Cartes du 2 : Doigts, Dés, Paires de chaussettes (Ressources, p. 7, 9, 23)\n• Petits vêtements (chaussettes, bonnets…)\n• 1 dé par élève\n• Jetons\n\n• 1 plateau\n• Plusieurs dés (taille classique ou gros dés)\n\n• Petits cartons solides\n• Pinces à linge\n• Cartes du 2 : Doigts, Dés, Paires de chaussettes (Ressources, p. 7, 9, 23).",
+      "flow": "• Jour 1 Contextualisation :\n« Les chaussettes de Kira »\n• Jour 2 Les points du 2\n• Jour 3 2 chaussettes\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les habits du 2\nObjectif : fréquenter les représentations du nombre 2.\nMon cahier de maths (p. 12)\nSemi-dirigé Cherche le 2\nObjectif : associer une quantité aux représentations du nombre 2.\nAutonome 1 Ranger les paires de chaussettes\nObjectif : constituer des collections de 2.\nAutonome 2 Accrocher 2 pinces à linge\nObjectif : constituer des collections de 2.",
+      "differentiation": "• Pour les élèves qui en ont besoin, accompagner l’identification du 2\nen verbalisant : Regarde, il y en a deux : un et encore un.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La promenade des solides",
+          "Maintenant !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les habits du 2",
+            "objective": "fréquenter les représentations du nombre 2.",
+            "note": "Mon cahier de maths (p. 12)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Cherche le 2",
+            "objective": "associer une quantité aux représentations du nombre 2."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "Ranger les paires de chaussettes",
+            "objective": "constituer des collections de 2."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Accrocher 2 pinces à linge",
+            "objective": "constituer des collections de 2."
+          }
+        ],
+        "mathCorner": {
+          "title": "La face 2",
+          "objective": "découvrir la constellation du dé représentant le nombre 2."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les chaussettes de Kira »"
+          },
+          {
+            "number": 2,
+            "title": "Les points du 2"
+          },
+          {
+            "number": 3,
+            "title": "2 chaussettes"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p2-s5",
+      "level": "PS",
+      "period": 2,
+      "week": 5,
+      "title": "Les assemblages de solides",
+      "domain": "Formes",
+      "start": 97,
+      "end": 102,
+      "objectives": "Reconnaitre, trier et classer des objets selon leur forme. Reproduire des assemblages de solides ou de formes planes.",
+      "summary": "Cette semaine, nous allons nous entrainer à reproduire des constructions de solides.",
+      "didactic": "Observer, décrire et reproduire des assemblages\nde solides permet de consolider leur connaissance. La reproduction d’un assemblage de solides à partir d’un modèle permet de mobiliser\nla reconnaissance visuelle de chaque solide et\nl’analyse intuitive des éléments qui le composent\n(en particulier ses faces). D’autre part, apprendre\nà observer et à reproduire les interactions entre\nplusieurs solides afin qu’ils constituent un assemblage global permet de consolider l’image mentale\nde chacun, de même que la superposition d’un\nsolide sur l’autre ou le placement des solides les\nuns devant les autres.\n•• Enfin, la reproduction d’assemblages de solides\npermet la manipulation exploratoire, l’élève étant\ninvité à observer l’assemblage de solides sous\ndifférents angles et à les manipuler dans toutes\nleurs orientations.\n•• La réalisation de puzzles vient elle aussi stimuler les fonctions cognitives qui permettent le\ndéveloppement des compétences spatiales. Elle\nva cibler plus particulièrement le développement\nde la perception visuelle ainsi que la capacité de\nmodélisation mentale de rotation (capacité à\nconstruire l’image mentale d’un espace, même si\nles éléments n’ont pas été vus dans le bon sens).\nElle améliore donc l’appréhension globale de\nl’espace. On notera qu’en complémentarité de\nces aspects spatiaux, la réalisation de puzzles\nentraine la lecture d’images et les inférences visuelles : c’est donc un exercice mental qui permet\nde développer des compétences spatiales dans\nun contexte plus transversal.",
+      "materials": "• Kira\n• Pièces de construction\n\n• Petits solides à manipuler\n\n• Kira\n• Petits solides (cubes, boules, pyramides à base carrée, cylindres)\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « Les assemblages de solides » (Mémo, p. 13)\n\n• Puzzle du château (Ressources, p. 83)\n\n• Petits solides (cubes, boules, pyramides à base carrée, cylindres)\n\n• Puzzles à encastrements\n\n• Puzzles de 4 à 6 pièces\n• 1 fiche de suivi par élève\n• Mon cahier de maths, p. 13 www.lienmini.fr/4775cah\n• Étiquettes Encastrements (Ressources, p. 85)\n\n• Cubes emboitables ou Duplo®\n\n• Puzzles de 4 à 6 pièces de l’atelier semi-dirigé (p. 101)\n• 1 fiche de suivi par élève (p. 101)",
+      "flow": "• Jour 1 Contextualisation :\n« La maison des poupées »\n• Jour 2 Les tours\n• Jour 3 Le puzzle du château\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les assemblages de solides\nObjectif : reproduire un assemblage de solides à partir d’un\nmodèle réel.\nSemi-dirigé Les puzzles\nObjectif : reproduire des assemblages de formes de type puzzle.\nMon cahier de maths (p. 13)\nAutonome 1 Les encastrements\nObjectif : encastrer des objets.\nAutonome 2 Les tours du château\nObjectif : reproduire un assemblage de solides à partir d’un\nmodèle réel.",
+      "differentiation": "• À l’étape 3, pour les élèves qui en auraient besoin, proposer un étayage individuel.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La promenade des solides",
+          "Maintenant !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les assemblages de solides",
+            "objective": "reproduire un assemblage de solides à partir d’un modèle réel."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les puzzles",
+            "objective": "reproduire des assemblages de formes de type puzzle.",
+            "note": "Mon cahier de maths (p. 13)"
+          },
+          {
+            "label": "Autonome 1",
+            "title": "Les encastrements",
+            "objective": "encastrer des objets."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Les tours du château",
+            "objective": "reproduire un assemblage de solides à partir d’un modèle réel."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les puzzles",
+          "objective": "reproduire des assemblages de formes de type puzzle."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « La maison des poupées »"
+          },
+          {
+            "number": 2,
+            "title": "Les tours"
+          },
+          {
+            "number": 3,
+            "title": "Le puzzle du château"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-p2-s6",
+      "level": "PS",
+      "period": 2,
+      "week": 6,
+      "title": "Le vocabulaire des positions",
+      "domain": "Espace",
+      "start": 103,
+      "end": 108,
+      "objectives": "Situer des objets par rapport à soi, entre eux, par rapport à des objets repères. Utiliser des marqueurs spatiaux adaptés (devant, derrière, sur, sous, au-dessus, en dessous, à l’intérieur, à l’extérieur…). Se situer par rapport à d’autres et par rapport à des objets repères.",
+      "summary": "Cette semaine, nous allons apprendre à utiliser les mots justes pour décrire des positions.",
+      "didactic": "Alors que les élèves de Petite Section ont déjà\nabordé leur repérage spatial à travers l’espace\nclasse, ils seront cette fois-ci amenés à entrer dans\nune analyse plus précise de leur environnement\nspatial. La compréhension et la bonne utilisation\ndu vocabulaire topologique sont essentielles car\nelles participent à la construction de l’espace. Cette\nstructuration, initiée dès le plus jeune âge notamment dans l’environnement familial, se poursuit\ntout au long de la scolarité. Il est indispensable\nde proposer aux élèves des activités qui leur permettent de se positionner ou de positionner un\nobjet tant par rapport à eux que par rapport à un\nautre point. C’est une compétence de base de la\nvie quotidienne.\nIl existe, en Petite Section, deux enjeux cognitifs :\n– la transition entre l’espace vécu et son évocation\nverbale : caractériser l’espace en utilisant des mots\nde vocabulaire précis suppose que l’élève entre\ndans la conceptualisation de celui-ci. L’élève sera\nplacé tour à tour en situation d’émetteur et de\nrécepteur, afin d’assurer la maitrise du vocabulaire\ndevant, derrière, sur, sous, dessus, dessous, dedans/à\nl’intérieur, dehors/à l’extérieur, à côté.\n– le passage d’une expérience spatiale égocentrée à une perception spatiale décentrée : l’élève\napprend progressivement à appréhender un\nespace dans lequel il n’est pas inclus, et donc à\nanalyser les positions des objets les uns par rapport\naux autres plutôt que par rapport à lui-même.\nL’élève passe de l’espace vécu à l’espace perçu.",
+      "materials": "• Kira Matériel de maison de poupée :\n• 2 personnages de tailles différentes\n• 2 lits de tailles différentes\n• 2 arbres de tailles différentes\n• 2 tapis de tailles différentes\n\n• Petits solides à manipuler\n\n• Kira\n• 1 carton\n\n• Mémo des maths www.lienmini.fr/4775memo Fiche récapitulative « Le vocabulaire des positions » (Mémo, p. 14)\n\n• 1 maison de poupée ou Playmobil®\n• Petites figurines\n• Petits meubles/objets\n\n• 1 maison de poupée ou Playmobil®\n• Petites figurines\n• Petits meubles/objets\n• Mon cahier de maths, p. 14 www.lienmini.fr/4775cah\n\nMatériel par élève\n• Kapla®\n• Figurines d’animaux divers\n• 1 figurine de renard ou pion Renard (Ressources, p. 81)\n\nMatériel par élève\n• 1 pion Kira plastifié (Ressources, p. 79)\n• 1 petit carton ou 1 barquette\n\n• Maison de poupée ou Playmobil®\n• Petites figurines",
+      "flow": "• Jour 1 Contextualisation :\n« Le cachecache de Kira »\n• Jour 2 Le cachecache des élèves\n• Jour 3 Le cachecache des figurines\n• Jour 4 Structuration\n\nATELIERS\nDirigé La maison des poupées\nObjectif : comprendre et utiliser le vocabulaire des positions\nen réception et en production.\nMon cahier de maths (p. 14)\nSemi-dirigé Le cachecache de Kira\nObjectif : comprendre et utiliser le vocabulaire des positions\nen réception et en production.\nAutonome 1 Les enclos des animaux\nObjectif : comprendre et construire les notions « à l’intérieur/\nà l’extérieur ».\nAutonome 2 Les abris\nObjectif : comprendre et construire la notion « dessous ».",
+      "differentiation": "• En production, pour les élèves qui en ont besoin, proposer de choisir\nentre deux mots de vocabulaire des positions : À ton avis, est-ce que\nj’ai placé le personnage devant ou derrière le canapé ?",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La promenade des solides",
+          "Maintenant !",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "La maison des poupées",
+            "objective": "comprendre et utiliser le vocabulaire des positions en réception et en production.",
+            "note": "Mon cahier de maths (p. 14)"
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Le cachecache de Kira",
+            "objective": "comprendre et utiliser le vocabulaire des positions en réception et en production."
+          },
+          {
+            "label": "Autonome 1",
+            "title": "Les enclos des animaux",
+            "objective": "comprendre et construire les notions « à l’intérieur/ à l’extérieur »."
+          },
+          {
+            "label": "Autonome 2",
+            "title": "Les abris",
+            "objective": "comprendre et construire la notion « dessous »."
+          }
+        ],
+        "mathCorner": {
+          "title": "Le cachecache des figurines",
+          "objective": "comprendre et utiliser le vocabulaire des positions."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Le cachecache de Kira »"
+          },
+          {
+            "number": 2,
+            "title": "Le cachecache des élèves"
+          },
+          {
+            "number": 3,
+            "title": "Le cachecache des figurines"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p1-s1",
+      "level": "MS",
+      "period": 1,
+      "week": 1,
+      "title": "Comparer globalement des quantités",
+      "domain": "Nombres",
+      "start": 35,
+      "end": 40,
+      "objectives": "Comparer des quantités.",
+      "summary": "Cette semaine, nous allons apprendre à comparer des quantités. Nous apprendrons à utiliser les mots : « rien », « un », « un peu », « beaucoup ».",
+      "didactic": "Le premier contact d’un enfant avec les nombres\nest généralement lié à la quantité (cardinalité).\nL’enfant donne un premier sens mathématique\naux collections en distinguant tout d’abord le\n« un » du « plusieurs ». Cette première perception\ndu nombre est une base intuitive essentielle de\nconstruction des concepts mathématiques que\ncette leçon vient renforcer et affiner. Il s’agit d’apprendre à estimer globalement une quantité,\nde plus en plus finement, en distinguant « rien »,\n« un », « un peu » et « beaucoup », pour construire\nune première approche solide sur laquelle les\nsymboles mathématiques pourront être introduits.\n•• L’introduction de la notion de « rien » est un\nconcept indispensable à la compréhension, plus\ntard, de la valeur du 0. Il est donc très important\nde la travailler.",
+      "materials": "• Kira\n• Pinces ou gommettes\n• Cartes Nombres de 1 à 10 (Ressources p. 7)\n\n• Kira\n• Une autre peluche ou marionnette\n• Graines de deux types\n• Jetons, cubes ou autres petits objets symboliques pour l’abstraction\n\n• Une quinzaine de coquillages\n• 4 sachets opaques\n• Photo de vacances de Kira (Ressources p. 5)\n\n• 4 sachets opaques remplis de coquillages (cf. Jour 1)\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche récapitulative « Comparer globalement des quantités » (Mémo, p. 3)\n\n• Plusieurs paires de barquettes contenant des quantités très différentes de coquillages\n\n• 4 animaux par élève (une grenouille, un poussin, une oie, un cheval en figurines ou imprimés, Ressources p. 122)\n• Une centaine de graines de haricots\n• 4 boites opaques fermées\n\n• Pâte à modeler\n• Rouleaux\n• Coquillages\n\n• 8 petites bouteilles opaques avec bouchon\n• Une centaine de graines de haricots\n• Lentilles\n\nMatériel par élève\n• Mon cahier de maths, couverture et p. 3 www.lienmini.fr/2993cah\n• Crayons de couleur\n\n• Boites à œufs\n• Pompons\n• Pince",
+      "flow": "• Jour 1 Contextualisation :\n« Les coquillages »\n• Jour 2 Identification tactile\n• Jour 3 Plus que ou moins que ?\n• Jour 4 Structuration\n\nATELIERS\nDirigé Le repas des animaux\nObjectif : identifier visuellement différentes quantités\n(rien/1/un peu/beaucoup).\nSemi-dirigé Les bouteilles sonores\nObjectif : identifier auditivement différentes quantités\n(rien/1/un peu/beaucoup).\nAutonome Les empreintes de coquillages\nObjectif : réaliser une quantité correspondant à « beaucoup ».\nMon cahier de maths J’entre en Moyenne Section\nObjectif : découvrir le cahier de l’élève.\nLes boites à œufs\nObjectif : réaliser des collections de 1.",
+      "differentiation": "• Pour les élèves qui en auraient besoin, enlever la boite contenant 1.\n• Pour ceux qui sont rapidement en réussite, proposer l’étape 3 en laissant la boite fermée\net faire secouer la boite par un élève (jeu auditif).",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La bande numérique",
+          "La comptine numérique jusqu’à 5",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Le repas des animaux",
+            "objective": "identifier visuellement différentes quantités (rien/1/un peu/beaucoup)."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les bouteilles sonores",
+            "objective": "identifier auditivement différentes quantités (rien/1/un peu/beaucoup)."
+          },
+          {
+            "label": "Autonome",
+            "title": "Les empreintes de coquillages",
+            "objective": "réaliser une quantité correspondant à « beaucoup »."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "J’entre en Moyenne Section",
+            "objective": "découvrir le cahier de l’élève."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les boites à œufs",
+          "objective": "réaliser des collections de 1."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les coquillages »"
+          },
+          {
+            "number": 2,
+            "title": "Identification tactile"
+          },
+          {
+            "number": 3,
+            "title": "Plus que ou moins que ?"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p1-s2",
+      "level": "MS",
+      "period": 1,
+      "week": 2,
+      "title": "Les collections de 1 à 4",
+      "domain": "Nombres",
+      "start": 41,
+      "end": 46,
+      "objectives": "Parcourir une collection en passant une et une seule fois par chacun de ses éléments. Dénombrer une collection d’objets (jusqu’à 6). Constituer une collection d’un cardinal donné (jusqu’à 6 objets). Poursuivre la compréhension qu’une quantité d’objets ne dépend ni de leur nature ni de leur organisation spatiale.",
+      "summary": "Nous allons apprendre à compter des objets jusqu’à 4.",
+      "didactic": "Dénombrer et constituer des quantités sont\ndeux actions complémentaires qui permettent\nde développer et de renforcer le sens que les enfants donnent au comptage. Alors que l’on peut\ncompter sans associer de réel concept numérique,\nen utilisant simplement la suite des nombres\ncomme une comptine, les allers-retours entre le\ndénombrement et la constitution de collections\npermettent d’assurer le développement du sens\nmathématique donné au comptage. En Moyenne\nSection, les élèves consolident ainsi une notion mathématique essentielle : le principe de cardinalité.\nIls expérimentent alors et renforcent le principe\nselon lequel le dernier nombre énoncé pendant\nle comptage correspond au nombre d’éléments\nde la collection. Ils acquièrent ce que l’on appelle\nle comptage-énumération (comptage-dénombrement), en opposition au comptage-récitation\n(comptage-numérotage).\n•• En soutenant le dénombrement, on consolide\nalors la maitrise de 5 principes fondamentaux\npour dénombrer.\n1. Le principe d’ordre stable : les mots-nombres\nsont toujours récités dans le même ordre (comptine).\n2. Le principe de correspondance terme à terme : à\nchaque objet pointé correspond un mot-nombre.\n3. Le principe de cardinalité : le dernier motnombre prononcé est le nombre d’éléments que\ncontient cette collection.\n4. Le principe d’abstraction : le cardinal de la collection est indépendant de la nature des objets\ndénombrés.\n5. Le principe de non-pertinence de l’ordre : l’ordre\ndans lequel on dénombre les objets ne change\npas leur cardinal.",
+      "materials": "• Kira\n• 3 bougies simples (pas de bougie chiffre)\n• Buchettes, jetons ou autres petits objets symboliques pour l’abstraction\n\n• Kira\n• Pinces ou gommettes\n• Cartes Nombres de 1 à 10 (Ressources p. 7)\n\n• Pâte à modeler\n• 10 bougies\n• 4 peluches\n\n• 4 cuillères\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche récapitulative « Les collections de 1 à 4 » (Mémo, p. 4)\n\n• Pâte à modeler\n• Une trentaine de bougies\n\n• Perles de couleurs différentes\n• Un fil de support de collier par élève\n\n• 4 peluches d’animaux différents\n• Jetons\n• Caisse\n\nMatériel par élève\n• Mon cahier de maths, p. 4 www.lienmini.fr/2993cah\n• Crayon de papier, crayons de couleur",
+      "flow": "• Jour 1 Contextualisation : « Les gâteaux d’anniversaire »\n• Jour 2 Les cuillères\n• Jour 3 Variante avec les doigts\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les gâteaux d’anniversaire\nObjectif : dénombrer et constituer des collections de 1 à 4.\nSemi-dirigé L’anniversaire des peluches\nObjectif : dénombrer et constituer des collections de 1 à 4.\nAutonome Les colliers de 3\nObjectif : constituer des collections de 3.\nMon cahier de maths Comparer globalement\ndes quantités (p. 4-5)\nObjectif : comparer globalement des quantités\n(rien, 1, un peu, beaucoup).\nLes bouteilles sonores\nObjectif : identifier auditivement différentes\nquantités (rien, 1, un peu, beaucoup).",
+      "differentiation": "• Adapter le champ numérique aux possibilités des élèves.\n• Aux étapes 3 et 4, faire varier le type de représentation des nombres utilisé\n(chiffre, dé, à l’oral…).",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La bande numérique",
+          "La comptine numérique jusqu’à 5",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les gâteaux d’anniversaire",
+            "objective": "dénombrer et constituer des collections de 1 à 4."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "L’anniversaire des peluches",
+            "objective": "dénombrer et constituer des collections de 1 à 4."
+          },
+          {
+            "label": "Autonome",
+            "title": "Les colliers de 3",
+            "objective": "constituer des collections de 3."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Comparer globalement des quantités (p. 4-5)",
+            "objective": "comparer globalement des quantités (rien, 1, un peu, beaucoup)."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les bouteilles sonores",
+          "objective": "identifier auditivement différentes quantités (rien, 1, un peu, beaucoup)."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les gâteaux d’anniversaire »"
+          },
+          {
+            "number": 2,
+            "title": "Les cuillères"
+          },
+          {
+            "number": 3,
+            "title": "Variante avec les doigts"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p1-s3",
+      "level": "MS",
+      "period": 1,
+      "week": 3,
+      "title": "Les solides",
+      "domain": "Formes",
+      "start": 47,
+      "end": 52,
+      "objectives": "Reconnaitre et classer des solides (cube, boule, pyramide à base carrée, cylindre).",
+      "summary": "Cette semaine, nous allons travailler sur ces formes en volume, qui prennent de la place dans les mains : nous allons apprendre à reconnaitre et à classer ces solides.",
+      "didactic": "Conformément aux dernières recherches sur le\ndéveloppement de l’enfant, nous avons choisi de\ntravailler sur les solides avant les figures planes.\nLes solides constituent en effet l’entrée cognitive\nvers les figures planes, la géométrie dans l’espace\nprenant directement appui sur l’espace vécu de\nl’enfant. Cette dernière s’appuie sur la vision en\ntrois dimensions, d’où l’importance de la manipulation de solides réels et d’objets usuels en\nforme de boule, cylindre, cube, et pyramide. Ces\nobjets doivent être touchés, observés et décrits\nde manière simple, avec des mots usuels, dans\nun premier temps. La rencontre avec un grand\nnombre de solides, dans des positions variées,\nest prédictive d’une bonne vision dans l’espace.\n•• Tout objet est un solide que l’on peut identifier\npar des caractéristiques. Celles-ci permettent de\nles classer : couleur, roule ou non, tient dans une\nmain ou non, pique ou non… Pour une première\ndescription des solides étudiés, deux mots du\nvocabulaire spécifique peuvent être utilisés :\n– la face ;\n– le sommet (l’endroit « pointu », qui pique, comme\nle sommet d’une montagne, mais qui n’est pas\nforcément dirigé vers le haut).\n•• Il est à noter que produire oralement le nom\ndes solides et le vocabulaire spécifique n’est pas\nune compétence attendue des élèves en fin de\nmaternelle, tout comme la reconnaissance des\nsolides représentés en deux dimensions.",
+      "materials": "• Diaporama www.lienmini.fr/2993d01\n• Kira\n• Jetons, cubes ou autres petits objets symboliques pour l’abstraction.\n\n• Kira\n• Pinces ou gommettes\n• Cartes Nombres de 1 à 10 (Ressources p. 7)\n\n• Kira\n• Papier cadeau\n• 4 objets suffisamment grands en forme de cube, boule, cylindre et pyramide à base carrée\n• Petits solides à manipuler (cubes, boules, cylindres, pyramides à base carrée)\n\n• Les 4 cadeaux du Jour 1\n• Petits solides à manipuler (cubes, boules, cylindres, pyramides à base carrée)\n• 2 plateaux\n\n• 4 cadeaux du Jour 1\n• 4 cerceaux\n• Objets de la classe en forme de cube, boule, pyramide, cylindre\n• Appareil photo\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche « Les solides » (Mémo, p. 5)\n• Photographie imprimée de la chasse aux solides du Jour 3\n\n• 4 cadeaux du Jour 1 (p. 49)\n• Petits solides à manipuler (cubes, boules, pyramides, cylindres)\n• Peluches de 4 animaux différents\n• Sac opaque\n• Matériel de construction de solides (type Lokons®, Geomag®, Polydrons®)\n\nMatériel par binôme\n• Différents types de boites à formes d’éveil\n\n• 2 jeux de petits solides à manipuler (2 lots d’un cube, d’une boule, d’une pyramide, d’un cylindre), chacun d’une couleur différente si possible\n• Boite opaque avec couvercle\n• Tissu opaque\n\nMatériel par élève\n• Mon cahier de maths, p. 6 www.lienmini.fr/2993cah\n• Gommettes rondes rouges\n• Crayons de couleurs\n\n• Pâte à modeler\n• Une trentaine de bougies",
+      "flow": "• Jour 1 Contextualisation :\n« Les cadeaux d’anniversaire »\n• Jour 2 Roule, ne roule pas\n• Jour 3 La chasse aux solides\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les cadeaux\nObjectif : reconnaitre visuellement et tactilement, décrire et construire\ndes solides.\nSemi-dirigé Le kim des solides\nObjectif : apparier des solides.\nAutonome Les encastrements\nObjectif : manipuler des solides pour les associer à la forme de leurs\nfaces.\nMon cahier de maths Les collections de 4 (p. 6-7)\nObjectif : constituer des collections de 4.\nLes gâteaux d’anniversaire\nObjectif : constituer des collections de 4 objets.",
+      "differentiation": "• Pour les élèves qui en ont besoin, en étape 3, ne mettre que\ndeux solides dans le sac et guider l’étape 4 pas à pas.\n• Pour les élèves rapidement en réussite, ajouter des cônes, voire des pavés.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "La bande numérique",
+          "La comptine numérique jusqu’à 5",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les cadeaux",
+            "objective": "reconnaitre visuellement et tactilement, décrire et construire des solides."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Le kim des solides",
+            "objective": "apparier des solides."
+          },
+          {
+            "label": "Autonome",
+            "title": "Les encastrements",
+            "objective": "manipuler des solides pour les associer à la forme de leurs faces."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les collections de 4 (p. 6-7)",
+            "objective": "constituer des collections de 4."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les gâteaux d’anniversaire",
+          "objective": "constituer des collections de 4 objets."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les cadeaux d’anniversaire »"
+          },
+          {
+            "number": 2,
+            "title": "Roule, ne roule pas"
+          },
+          {
+            "number": 3,
+            "title": "La chasse aux solides"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p1-s4",
+      "level": "MS",
+      "period": 1,
+      "week": 4,
+      "title": "Les représentations des nombres jusqu’à 3",
+      "domain": "Nombres",
+      "start": 53,
+      "end": 58,
+      "objectives": "Associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 3. Poursuivre la compréhension qu’une quantité d’objets ne dépend ni de leur nature ni de leur organisation spatiale. Constituer une collection d’un cardinal donné (jusqu’à 6).",
+      "summary": "Cette semaine, nous allons nous entrainer à reconnaitre toutes les façons de représenter 1, 2 et 3.",
+      "didactic": "L’apprentissage des nombres passe par le repérage des constellations ordonnées « classiques ».\nCelles-ci figurent des représentations analogiques\ndes quantités permettant de garder la mémoire\nde celles-ci, et leur mobilisation représente une\npremière étape vers la compréhension de la notion\nde nombre. La capacité à identifier un nombre\net le passage d’une représentation d’un nombre\nà une autre sont des éléments de construction\nde cette notion et des outils essentiels au calcul.\nDifférents agencements permettent d’identifier\nles nombres jusqu’à 3, par exemple :\n– les doigts\n– les constellations du dé\n– les cartes à jouer\n– les points alignés\n•• L’identification de ces agencements est d’abord\ninitiée par le comptage, afin que l’association\ndevienne progressivement instantanée. Cette\nprocédure relève de la vision globale : les élèves\nsont capables de reconnaitre directement de très\npetites quantités (subitizing), sans avoir recours\nau comptage. Concernant la reconnaissance des\nconstellations des nombres jusqu’à 3, il faut viser\nson automatisation en Moyenne Section.",
+      "materials": "• Photos prises en classe de différents moments de la journée\n\n• Cartes Nombres, Dés, Doigts de 1 à 3 (Ressources, p. 7-11)\n\n• Diaporama www.lienmini.fr/2993d01\n• Kira\n• Jetons, cubes ou autres petits objets symboliques pour l’abstraction\n\n• Cartes Nombres, Dés, Doigts de 1 à 3 (Ressources, p. 7-11)\n• Feuille A3 vierge\n\n• Cartes Nombres, Dés, Doigts, Cookies, Confettis de 1 à 3 (Ressources, p. 7-15)\n• Tableau du Jour 1\n\n• Cartes Nombres, Dés, Doigts, Cookies de 1 à 3 (Ressources, p. 7-13)\n\n• Mémo des maths www.lienmini.fr/2993memo Fiches « La roue du 1 », « La roue du 2 », « La roue du 3 » (Mémo, p. 6-8)\n• Poster « Les nombres de 1 à 6 »\n\nMatériel par élève\n• Poster « La roue des nombres »\n• 3 roues des nombres vierges imprimées, format A3 (Ressources, p. 58)\n• Cartes Dés, Doigts de 1 à 4 (Ressources, p. 9-11)\n• Réglettes de 1 à 4 (de type « réglettes cuisenaires », ou réglettes points, Ressources, p. 63)\n• Cartes à jouer de 1 (as) à 4\n• Cubes emboitables\n• Petits objets figuratifs (fruits ou animaux, par exemple)\n\nMatériel par élève\n• Bandes à compter jusqu’à 3 (Ressources, p. 64-67)\n• Pâte à modeler rouge, jaune ou verte\n\n• Cartes Nombres, Dés, Doigts, Cookies, Confettis, Enfants de 1 à 3 (Ressources, p. 7-17)\n\nMatériel par élève\n• Mon cahier de maths, p. 8 www.lienmini.fr/2993cah\n• Crayon de papier\n• Crayons de couleur",
+      "flow": "• Jour 1 Contextualisation :\n« Le jeu de société »\n• Jour 2 L’affiche des représentations\ndes nombres\n• Jour 3 Le Memory des nombres\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les roues jusqu’à 3\nObjectif : associer une quantité, le nom d’un nombre\net une écriture chiffrée jusqu’à 3.\nSemi-dirigé Le jeu du lynx\nObjectif : associer une quantité, le nom d’un nombre\net une écriture chiffrée jusqu’à 3.\nAutonome Les paniers de pommes\nObjectif : constituer des collections de 1 à 3 objets.\nMon cahier de maths Les solides (p. 8-9)\nObjectif : reconnaitre et associer des solides.",
+      "differentiation": "• Pour les élèves qui en ont besoin, le tableau réalisé lors de l’activité en grand groupe\ndu Jour 1 pourra être mis à disposition. Des bandes numériques des différentes\nreprésentations (Ressources, p. 59) pourront également être fournies.\n• Pour les élèves rapidement en réussite, la roue du 4 pourra être proposée.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Lucky Luke de 1 à 3",
+          "Ma journée de classe",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les roues jusqu’à 3",
+            "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 3."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Le jeu du lynx",
+            "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 3."
+          },
+          {
+            "label": "Autonome",
+            "title": "Les paniers de pommes",
+            "objective": "constituer des collections de 1 à 3 objets."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les solides (p. 8-9)",
+            "objective": "reconnaitre et associer des solides."
+          }
+        ],
+        "mathCorner": {
+          "title": "La construction de solides",
+          "objective": "construire des solides."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Le jeu de société »"
+          },
+          {
+            "number": 2,
+            "title": "L’affiche des représentations des nombres"
+          },
+          {
+            "number": 3,
+            "title": "Le Memory des nombres"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p1-s5",
+      "level": "MS",
+      "period": 1,
+      "week": 5,
+      "title": "Les motifs répétitifs (1)",
+      "domain": "Motifs",
+      "start": 59,
+      "end": 64,
+      "objectives": "Mémoriser un motif répétitif simple. Reconnaitre un motif répétitif et ses régularités. Décrire oralement des motifs simples de différentes natures, sans nécessairement recourir au vocabulaire spécialisé. Prolonger l’amorce d’un motif répétitif et verbaliser la règle de prolongement utilisée.",
+      "summary": "Cette semaine, nous allons apprendre à reconnaitre et à poursuivre des motifs répétitifs que l’on appelle aussi « algorithmes ». Ils sont décoratifs et nous allons nous en servir pour préparer la fête de l’automne.",
+      "didactic": "Les mathématiques construisent et entrainent\nles liens logiques de la pensée et développent\nl’abstraction. L’apprentissage de motifs organisés,\nappelés plus couramment en maternelle « algorithmes », contribue à cette structuration. Il s’agit\nd’abord d’apprendre à identifier, mémoriser et\norganiser une suite de règles formelles entre elles.\nL’élève sera ensuite invité à choisir lui-même ces\nrègles pour créer des motifs organisés.\n•• La création et l’analyse de ces organisations\npeuvent d’abord constituer une tâche simple,\npuis progressivement une tâche plus complexe.\nPlusieurs types de motifs organisés sont donc à\nproposer aux élèves en maternelle :\n– les motifs répétitifs simples, dans lesquels un\nseul critère varie (par exemple, la couleur) :\n…\n– les motifs répétitifs plus complexes, dans lesquels\nplusieurs critères varient dans le même algorithme\n(par exemple, la couleur et le nombre) :\n…\n– les motifs organisés experts, comme les motifs\névolutifs (algorithmes récursifs) :\n…\nPour cette période 1, la stabilisation des rythmes\nbinaires est privilégiée.",
+      "materials": "• Diaporama www.lienmini.fr/2993d01\n• Kira\n• Buchettes, jetons ou autres petits objets symboliques pour l’abstraction\n\n• Photos prises en classe de différents moments de la journée\n\n• Cartes Nombres\n• Cartes Dés et Doigts de 1 à 3 (Ressources, p. 9, 11)\n\n• Bandes de papier (4 cm × 10 cm) de couleurs différentes (jaune, rouge, marron…)\n• Agrafeuse\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche récapitulative « Les motifs répétitifs » (Mémo, p. 9)\n\n• Une feuille d’automne par élève (Ressources, p. 100) à agrandir en format A3\n• Décorations de différentes couleurs (ex. : différents motifs à la perforatrice, bouchons, boutons, perles…)\n• Grande barquette\n\n• Abaques, perles à abaques\n\n• Une assiette par élève (de préférence aux couleurs de l’automne)\n• Une centaine de pinces à linge en bois de deux tailles différentes\n\nMatériel par élève\n• Mon cahier de maths, p. 10 www.lienmini.fr/2993cah\n• Crayons de couleur\n• Gommettes rondes rouges",
+      "flow": "• Jour 1 Contextualisation :\n« Les guirlandes de l’automne »\n• Jour 2 Algorithmes vocaux\n• Jour 3 Algorithmes gestuels\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les feuilles d’automne\nObjectif : reconnaitre, décrire oralement, mémoriser et prolonger\nun motif répétitif binaire.\nSemi-dirigé Les soleils d’automne\nObjectif : reconnaitre, décrire oralement et prolonger un motif\nrépétitif binaire.\nAutonome Les abaques\nObjectif : reconnaitre et prolonger un motif répétitif binaire.\nMon cahier de maths\nLes représentations des nombres jusqu’à 3 (p. 10-11)\nObjectif : associer une quantité, le nom d’un nombre\net une écriture chiffrée jusqu’à 3.",
+      "differentiation": "• Pour les élèves qui en auraient besoin, ne donner que les deux\nobjets ou motifs nécessaires à chaque nervure.\n• Pour les élèves rapidement en réussite, proposer des algorithmes\nplus complexes (ex. : AABB).",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Lucky Luke de 1 à 3",
+          "Ma journée de classe",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les feuilles d’automne",
+            "objective": "reconnaitre, décrire oralement, mémoriser et prolonger un motif répétitif binaire."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les soleils d’automne",
+            "objective": "reconnaitre, décrire oralement et prolonger un motif répétitif binaire."
+          },
+          {
+            "label": "Autonome",
+            "title": "Les abaques",
+            "objective": "reconnaitre et prolonger un motif répétitif binaire."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les représentations des nombres jusqu’à 3 (p. 10-11)",
+            "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 3."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les roues des nombres",
+          "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 3."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les guirlandes de l’automne »"
+          },
+          {
+            "number": 2,
+            "title": "Algorithmes vocaux"
+          },
+          {
+            "number": 3,
+            "title": "Algorithmes gestuels"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p1-s6",
+      "level": "MS",
+      "period": 1,
+      "week": 6,
+      "title": "Le vocabulaire des positions",
+      "domain": "Espace",
+      "start": 65,
+      "end": 70,
+      "objectives": "Situer des objets par rapport à soi, entre eux et par rapport à des objets repères. Utiliser des marqueurs spatiaux adaptés (devant, derrière, sur, sous, au-dessus, en dessous, à l’intérieur, à l’extérieur…). Se situer par rapport à d’autres et par rapport à des objets repères.",
+      "summary": "Nous allons apprendre et utiliser les mots justes pour décrire des positions.",
+      "didactic": "En géométrie, la compréhension et la bonne\nutilisation du vocabulaire topologique sont essentielles car elles participent à la structuration\nde l’espace. Cette structuration, initiée dès le plus\njeune âge, se poursuivra tout au long de la scolarité.\nIl est indispensable de proposer aux élèves des\nactivités qui leur permettent de se positionner\nou de positionner un objet tant par rapport\nà soi que par rapport à un autre point. C’est\nune compétence de base de la vie quotidienne.\nPlusieurs autres disciplines peuvent concourir à\nl’acquisition de cette compétence, notamment\nl’EPS (chasse au trésor, course d’orientation…).\n•• Un travail régulier en situation permet la transition entre l’appréhension de l’espace vécu et celle\nde l’espace représenté, très différents du point de\nvue conceptuel. Le vocabulaire employé doit être\nprécis ; l’articulation avec des activités langagières\nde type émetteur/récepteur est nécessaire pour\nen assurer la maitrise. En Moyenne Section, il\nest ici proposé de consolider spécifiquement la\nconnaissance des mots devant, derrière, dessus,\ndessous, sur, sous, à côté, dedans, dehors, à l’intérieur,\nà l’extérieur, près, loin.\n•• Enfin, le repérage dans la feuille doit également être abordé. Le micro-espace (la feuille) a\ndes spécificités qui diffèrent de celles du mésoespace (la classe) et du macro-espace (l’école, le\nquartier). Les élèves doivent comprendre qu’un\nmême mot peut alors avoir plusieurs significations\nselon le contexte spatial. Par exemple, le haut de\nla feuille n’est pas un point situé en hauteur dans\nl’espace réel.",
+      "materials": "• Diaporama www.lienmini.fr/2993d01\n• Kira\n• Jetons, cubes ou autres petits objets pour l’abstraction\n\n• Photos prises en classe de différents moments de la journée\n\n• Cartes Nombres\n• Cartes Dés, Doigts de 1 à 3 (Ressources, p. 9-11)\n\n• Petits objets de la classe en guise de trésors (billes dorées, strass, perles…)\n\n• Une chaise par élève\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche « Le vocabulaire des positions » (Mémo, p. 10)\n• Kira\n• Petit carton\n\n• 1 sac de graines par élève\n• 1 cube et 1 petit animal (ou personnage) par élève\n• 4 bâtonnets par élève\n• 1 boite à chaussures\n• 1 foulard opaque\n\n• Des bandes modèles représentant 5 images d’escargots positionnés par rapport à un cube (Ressources, p. 109)\n• Pâte à modeler\n• Une trentaine de cubes\n\n• Une maison de poupées ou Playmobil® avec des meubles, un trésor (perle ou strass)\n\nMatériel par élève\n• Mon cahier de maths, p. 12 www.lienmini.fr/2993cah\n• Gommettes rondes bleues et gommettes carrées bleues",
+      "flow": "• Jour 1 Contextualisation : « La chasse\naux trésors dans la classe »\n• Jour 2 La chasse aux trésors dans la cour\n• Jour 3 Le jeu de la chaise\n• Jour 4 Structuration\n\nATELIERS\nDirigé Mais où est-il ?\nObjectif : comprendre et utiliser le vocabulaire des positions\nen réception et en production.\nSemi-dirigé La maison à meubler\nObjectif : comprendre et utiliser le vocabulaire des positions\nen réception et en production.\nAutonome Placer les escargots\nObjectif : reproduire la position d’un objet à partir d’une image.\nMon cahier de maths Les motifs répétitifs (p. 12-13)\nObjectif : identifier un motif répétitif binaire et le poursuivre.",
+      "differentiation": "• En production, pour les élèves qui en ont besoin, proposer de choisir entre deux mots\nde vocabulaire.\n• Pour les élèves rapidement en réussite, proposer des mots complémentaires (entre,\nen face de…).",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Lucky Luke de 1 à 3",
+          "Ma journée de classe",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Mais où est-il ?",
+            "objective": "comprendre et utiliser le vocabulaire des positions en réception et en production."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "La maison à meubler",
+            "objective": "comprendre et utiliser le vocabulaire des positions en réception et en production."
+          },
+          {
+            "label": "Autonome",
+            "title": "Placer les escargots",
+            "objective": "reproduire la position d’un objet à partir d’une image."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les motifs répétitifs (p. 12-13)",
+            "objective": "identifier un motif répétitif binaire et le poursuivre."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les colliers de perles",
+          "objective": "créer un motif répétitif binaire et le poursuivre."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « La chasse aux trésors dans la classe »"
+          },
+          {
+            "number": 2,
+            "title": "La chasse aux trésors dans la cour"
+          },
+          {
+            "number": 3,
+            "title": "Le jeu de la chaise"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p2-s1",
+      "level": "MS",
+      "period": 2,
+      "week": 1,
+      "title": "Les collections jusqu’à 5",
+      "domain": "Nombres",
+      "start": 73,
+      "end": 78,
+      "objectives": "Poursuivre la compréhension qu’une quantité d’objets ne dépend ni de leur nature ni de leur organisation spatiale. Parcourir une collection en passant une et une seule fois par chacun de ses éléments. Dénombrer une collection d’objets (jusqu’à 6). Constituer une collection d’un cardinal donné (jusqu’à 6 objets).",
+      "summary": "Cette semaine, nous allons apprendre à compter jusqu’à 5 objets.",
+      "didactic": "Les activités de dénombrement et de constitution de quantités sont étendues cette semaine\naux collections jusqu’à 5. On reprend ainsi la\nconsolidation des cinq principes fondamentaux\ndu dénombrement en élargissant le champ numérique mobilisé. La manipulation, elle, est rendue plus difficile car les collections de 5 ne sont\nplus appréhendables visuellement en une seule\nfois. L’automatisation des stratégies de comptage-énumération prend alors tout son sens, avec\ndes collections dont le cardinal ne pourra pas être\ndéterminé par reconnaissance visuelle (subitizing).\n•• C’est aussi l’occasion de construire des bases\nde conceptualisation du nombre 5, avant de\nmémoriser ses diverses représentations.",
+      "materials": "• Kira\n• Une autre peluche\n• Noix, jetons, cubes ou autres petits objets symboliques pour l’abstraction\n\n• 5 figurines d’animaux différents\n\n• Kira\n• Fiche « Le repas des koalas » (Ressources, p. 52)\n\n• Kira\n• 15 noix\n• 5 petits paniers ou barquettes\n• Images de 5 écureuils (Ressources, p. 101)\n\n• Kira\n• 15 tartelettes en pâte à modeler\n• Plat\n• 5 assiettes\n• Images de 5 écureuils du Jour 1\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche « Les collections jusqu’à 5 » (Mémo, p. 11)\n\n• Kira\n• 5 sachets transparents\n• 15 noix\n\n• 1 panier ou 1 barquette par élève\n• Environ 50 noix\n\n• 1 boite à œufs\n• 1 pince\n• 1 étiquette « 4 » (Ressources, p. 49)\n• Environ 40 pompons par élève\n\n• 1 jeu « Le panier de noix » imprimé par élève (Ressources, p. 79-80)\n• Noix ou jetons\n\nMatériel par élève\n• Mon cahier de maths, p. 14 www.lienmini.fr/2993cah\n• Crayon de papier",
+      "flow": "• Jour 1 Contextualisation :\n« La récolte des noix »\n• Jour 2 Le repas des écureuils\n• Jour 3 La livraison de noix\n• Jour 4 Structuration\n\nATELIERS\nDirigé Le marché aux noix\nObjectif : dénombrer, constituer des collections, discriminer\ndes quantités jusqu’à 5.\nSemi-dirigé Le panier de noix\nObjectif : dénombrer et constituer des collections jusqu’à 5.\nAutonome La boite à noix\nObjectif : constituer des collections de 4.\nMon cahier de maths Les positions (p. 14-15)\nObjectif : reconnaitre et associer des positions.\nLes escargots\nObjectif : reproduire la position d’un objet par rapport à une image.",
+      "differentiation": "• Adapter la quantité demandée aux besoins de chaque élève.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Le repas des koalas",
+          "La file des animaux",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Le marché aux noix",
+            "objective": "dénombrer, constituer des collections, discriminer des quantités jusqu’à 5."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Le panier de noix",
+            "objective": "dénombrer et constituer des collections jusqu’à 5."
+          },
+          {
+            "label": "Autonome",
+            "title": "La boite à noix",
+            "objective": "constituer des collections de 4."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les positions (p. 14-15)",
+            "objective": "reconnaitre et associer des positions."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les escargots",
+          "objective": "reproduire la position d’un objet par rapport à une image."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « La récolte des noix »"
+          },
+          {
+            "number": 2,
+            "title": "Le repas des écureuils"
+          },
+          {
+            "number": 3,
+            "title": "La livraison de noix"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p2-s2",
+      "level": "MS",
+      "period": 2,
+      "week": 2,
+      "title": "Les assemblages de solides",
+      "domain": "Formes",
+      "start": 79,
+      "end": 84,
+      "objectives": "Reconnaitre et classer des solides (cube, boule, pyramide à base carrée, cylindre). Reproduire des assemblages de solides.",
+      "summary": "Nous allons nous entrainer à reproduire des constructions de solides.",
+      "didactic": "Observer, décrire et reproduire des assemblages de solides sont des actions qui consolident\nla connaissance des solides de référence. Ces\ntâches permettent de remobiliser la reconnaissance visuelle de chacun des solides et l’analyse\ndes éléments qui le composent (en particulier les\nfaces). De plus, l’appréhension d’un assemblage\nde plusieurs solides en interaction les uns avec les\nautres permet d’en compléter l’analyse. L’expérimentation de ces interactions en manipulation\naffine la perception mentale de chaque solide et\nde ses propriétés.\n•• D’autre part, l’analyse des assemblages de solides\npermet de « mieux voir » dans l’espace. En effet,\nelle permet d’expérimenter les nécessaires changements de point de vue afin d’avoir une vision\ncomplète d’un ensemble en trois dimensions.\nAinsi, les élèves intègrent que, même si l’image\nchange selon le point de vue, la structure en ellemême reste inchangée.\n•• On notera que tous les travaux d’assemblage\nde solides à partir d’un modèle photographié\namènent une difficulté supplémentaire : il s’agit\nici d’analyser une représentation plane pour en\ndéduire l’agencement en trois dimensions qui\ncorrespond. Le traitement de l’image plane puis\nsa conceptualisation en trois dimensions constituent une étape de maturité cognitive spatiale\nsupplémentaire, qu’il conviendra de contourner\nchez les élèves ne l’ayant pas encore acquise, en\nproposant les modèles réels, par exemple.",
+      "materials": "• Kira\n• 2 autres peluches\n• 4 petits solides à manipuler\n• Jetons pour l’abstraction\n\n• 5 figurines d’animaux différents\n\n• Kira\n• Fiche « Le repas des koalas » (Ressources, p. 52)\n\n• Petits solides (cubes, boules, pyramides à base carrée, cylindres)\n\n• Petits solides (cubes, boules, pyramides à base carrée, cylindres)\n• Photo du modèle de château 1 (Ressources, p. 85, ou à adapter selon le matériel de la classe)\n\n• Petits solides (cubes, boules, pyramides à base carrée, cylindres)\n• Photo du modèle de château 2 (Ressources, p. 85, ou à adapter selon le matériel de la classe)\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche « Les assemblages de solides » (Mémo, p. 12)\n\n• Petits solides (cubes, boules, pyramides à base carrée, cylindres)\n• 4 séries de 6 photos (4 niveaux) des petits modèles de châteaux, de 5 à 8 solides (Ressources p. 81-84, ou à adapter selon le matériel de la classe)\n• Étiquettes prénoms des élèves\n\n• Matériel de construction de solides (type Lokon®, Polydron®, Geomag®)\n\n• Briques de construction, de préférence cubiques (type Duplo® ou Lego®)\n\nMatériel par élève\n• Mon cahier de maths, p. 16 www.lienmini.fr/2993cah\n• Crayons de couleur\n• Crayon de papier",
+      "flow": "• Jour 1 Contextualisation :\n« Le concours de châteaux »\n• Jour 2 Le modèle de château\n• Jour 3 Le château sur commande\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les bâtisseurs\nObjectif : reproduire un assemblage de solides à partir d’un modèle réel\npuis en photo, proche puis éloigné.\nSemi-dirigé Les châteaux jumeaux\nObjectif : reproduire et décrire un assemblage de solides.\nAutonome Le château collectif\nObjectif : assembler des solides pour produire une construction collective.\nMon cahier de maths Les collections jusqu’à 5 (p. 16-17)\nObjectif : dénombrer et constituer des collections jusqu’à 5.\nLa boite à noix\nObjectif : constituer des collections de 5.",
+      "differentiation": "• Pour les élèves rapidement en réussite, placer des solides intrus (différents de la boule,\ndu cylindre, de la pyramide à base carrée, du cube) dans la réserve de solides.\n• Pour les élèves qui en ont besoin, verbaliser et faire verbaliser les étapes de construction.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Le repas des koalas",
+          "La file des animaux",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les bâtisseurs",
+            "objective": "reproduire un assemblage de solides à partir d’un modèle réel puis en photo, proche puis éloigné."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les châteaux jumeaux",
+            "objective": "reproduire et décrire un assemblage de solides."
+          },
+          {
+            "label": "Autonome",
+            "title": "Le château collectif",
+            "objective": "assembler des solides pour produire une construction collective."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les collections jusqu’à 5 (p. 16-17)",
+            "objective": "dénombrer et constituer des collections jusqu’à 5."
+          }
+        ],
+        "mathCorner": {
+          "title": "La boite à noix",
+          "objective": "constituer des collections de 5."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Le concours de châteaux »"
+          },
+          {
+            "number": 2,
+            "title": "Le modèle de château"
+          },
+          {
+            "number": 3,
+            "title": "Le château sur commande"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p2-s3",
+      "level": "MS",
+      "period": 2,
+      "week": 3,
+      "title": "Les représentations des nombres jusqu’à 4",
+      "domain": "Nombres",
+      "start": 85,
+      "end": 90,
+      "objectives": "Associer une quantité, le nom d’un nombre et une écriture chiffrée. Poursuivre la compréhension qu’une quantité d’objets ne dépend ni de leur nature ni de leur organisation spatiale. Constituer une collection d’un cardinal donné (jusqu’à 6).",
+      "summary": "Cette semaine, nous allons nous entrainer à reconnaitre des façons de représenter 1, 2 et 3 et apprendre à reconnaitre des façons de représenter 4.",
+      "didactic": "Les études scientifiques montrent que les quantités jusqu’à 3 sont très facilement reconnaissables\ninstantanément, et ce, quel que soit leur agencement. C’est ce que l’on peut appeler la capacité de\nsubitizing naturel, accessible de façon quasiment\ninnée. Les quantités de 4 éléments sont plus difficiles à appréhender instantanément. Alors que les\nquantités jusqu’à 3 sont appréhendables en une\nseule focalisation, les élèves ont plus volontiers\nbesoin de deux focalisations pour reconnaitre une\nquantité de 4 éléments.\n•• Les entrainements et répétitions permettront\nde consolider la compréhension et la construction du nombre 4. Certains de ces agencements,\ncomme la constellation du dé, permettront, par\nexemple, de stabiliser que 4, c’est 2 et encore 2.",
+      "materials": "• 5 figurines d’animaux différents\n\n• Diaporama www.lienmini.fr/2993d02\n• Kira\n• Jetons, cubes ou autres petits objets symboliques pour l’abstraction\n\n• Kira\n• Fiche « Le repas des koalas » (Ressources, p. 52)\n\n• Cartes Dossards (Ressources, p. 21)\n\n• Mémo des maths www.lienmini.fr/2993memo\n• Fiche « La roue du 4 » (Mémo, p. 13)\n\n• Cartes Dossards (Ressources, p. 21)\n• Tableau de la période 1 (p. 55, Jour 1) ou feuille A3\n\n• Cartes Dossards (Ressources, p. 21)\n• Pâte à modeler\n• Buchettes\n\nMatériel pour chaque élève\n• 1 bande « La course des hérissons » (Ressources, p. 61)\n• 1 dé\n• 4 jetons\n• 20 buchettes\n• Pâte à modeler\n\n• Cartes Dossards (Ressources, p. 21) sans les dossards avec les piquants\n\nMatériel par élève\n• Mon cahier de maths, p. 18 www.lienmini.fr/2993cah\n• Crayons de papier\n• Crayon de couleur",
+      "flow": "• Jour 1 Contextualisation :\n« La course des hérissons »\n• Jour 2 Les équipes de hérissons\n• Jour 3 L’affiche des représentations\ndes nombres\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les dossards\nObjectif : associer une quantité, le nom d’un nombre\net une écriture chiffrée jusqu’à 4.\nSemi-dirigé Le Memory des hérissons\nObjectif : associer une quantité, le nom d’un nombre\net une écriture chiffrée jusqu’à 4.\nAutonome La file des hérissons\nObjectif : associer une quantité et une écriture chiffrée jusqu’à 4.\nMon cahier de maths Les assemblages de solides (p. 18-19)\nObjectif : associer des représentations schématiques\net des photos d‘assemblages de solides.\nLes bâtisseurs\nObjectif : reproduire un assemblage de solides\nà partir d’une photo.",
+      "differentiation": "• Accompagner l’identification du nombre du dossard, si besoin.\n• Pour les élèves qui le peuvent, proposer plus d’items à traiter dans l’étape 3.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Le repas des koalas",
+          "La file des animaux",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les dossards",
+            "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 4."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Le Memory des hérissons",
+            "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 4."
+          },
+          {
+            "label": "Autonome",
+            "title": "La file des hérissons",
+            "objective": "associer une quantité et une écriture chiffrée jusqu’à 4."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les assemblages de solides (p. 18-19)",
+            "objective": "associer des représentations schématiques et des photos d‘assemblages de solides."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les bâtisseurs",
+          "objective": "reproduire un assemblage de solides à partir d’une photo."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « La course des hérissons »"
+          },
+          {
+            "number": 2,
+            "title": "Les équipes de hérissons"
+          },
+          {
+            "number": 3,
+            "title": "L’affiche des représentations des nombres"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p2-s4",
+      "level": "MS",
+      "period": 2,
+      "week": 4,
+      "title": "Les masses",
+      "domain": "Grandeurs",
+      "start": 91,
+      "end": 96,
+      "objectives": "Comparer les masses de 2 objets.",
+      "summary": "Cette semaine, nous allons nous entrainer à comparer des masses, en les portant mais aussi en apprenant à utiliser une balance.",
+      "didactic": "Pour aborder la notion de masse, il est important\nde bien distinguer :\n– les objets qui servent de support aux grandeurs ;\n– les grandeurs (longueurs, masses, durées…) ;\n– la mesure des grandeurs : le nombre associé à\nune unité qui exprime la valeur de cette mesure.\n•• En maternelle, l’essentiel est de percevoir la grandeur travaillée. Pour les masses, il est important de\nmanipuler pour que l’élève arrive à expérimenter\nles notions de « lourd » et de « léger ». En Moyenne\nSection, le soupèsement permettra de développer des repères sensoriels de cette grandeur. La\ncomparaison de masses sera donc menée pour\nles objets de masses très différentes. En revanche,\nl’introduction de comparaison de masses proches\nintroduira la nécessité d’instrumentation de l’activité, permettant alors aux élèves de découvrir\nles limites de l’appréhension perceptives des\ngrandeurs. « C’est plus lourd que », « c’est plus\nléger que », « c’est le plus lourd », « c’est le plus\nléger »… sont les types de réponses à rechercher dans les situations proposées aux élèves. On\ngardera cependant à l’esprit que les expressions\n« c’est lourd » et « c’est léger » sous-entendent une\ncomparaison qui reste subjective. Il est intéressant\nde faire remarquer aux élèves que tout dépend\ndu comparé et du comparant : un chien, « c’est\nlourd » (pour un enfant qui voudrait le porter),\nmais par rapport à un éléphant, « c’est léger » !\n•• On restera vigilant sur le vocabulaire « poids » et\n« masse » : le poids étant l’expression d’une force\net la masse une caractéristique constitutive de\nchaque objet, le terme « masse » doit être utilisé.\n•• Il est à noter que, dans toutes les activités utilisant\ndes images d’animaux, ceux-ci ont été représentés\nd’une taille approximativement identique : cette\nreprésentation est essentielle pour que les élèves\nne fassent pas de lien direct entre la taille et la\nmasse, et donc ne construisent pas de raccourci\ndommageable entre les deux grandeurs.",
+      "materials": "• Diaporama www.lienmini.fr/2993d02\n• Kira\n• Biscuits, jetons, cubes ou autres petits objets symboliques pour l’abstraction\n\n• 2 sacs de courses\n• Matériel volumineux à faible densité (polystyrène, par exemple)\n• Matériel à densité élevée (bouteilles de peinture, par exemple)\n\n• Règle de 30 cm environ\n• Objet cylindrique (tube de colle, par exemple)\n• Scotch\n• Figurines\n\n• Cartes Animaux (Ressources, p. 23-25)\n\n• Mémo des maths : www.lienmini.fr/2993memo Fiche « Les masses » (Mémo, p. 14)\n\n• 4 paquets de sucre et 4 paquets de farine opaques\n• Balance Roberval\n\nMatériel par élève\n• Grande affiche A2\n• Prospectus à découper\n• Entêtes de l’affiche des masses (Ressources, p. 123)\n\n• 3 petites bouteilles de lait vides par élève\n• Semoule\n• Gommettes\n\nMatériel par élève\n• Mon cahier de maths, p. 20 www.lienmini.fr/2993cah\n• Crayons de couleur\n\n• Cartes Dossards (Ressources, p. 21) sans les dossards avec piquants",
+      "flow": "• Jour 1 Contextualisation : « Les sablés »\n• Jour 2 La balançoire\n• Jour 3 Les estimations\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les pesées\nObjectif : comparer des masses avec une balance.\nSemi-dirigé Les bouteilles de lait\nObjectif : comparer et classer des masses par soupèsement.\nAutonome L’affiche des masses\nObjectif : estimer des masses.\nMon cahier de maths Les représentations des nombres\njusqu’à 4 (p. 20-21)\nObjectif : associer une quantité, le nom d’un nombre\net une écriture chiffrée jusqu’à 4.",
+      "differentiation": "• Pour les élèves qui auraient du mal à ressentir la masse dans leurs mains, leur proposer\nde fermer les yeux pour concentrer les stimulus sensoriels au niveau de leurs mains.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Le Lucky Luke frappé",
+          "La chasse au trésor",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les pesées",
+            "objective": "comparer des masses avec une balance."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les bouteilles de lait",
+            "objective": "comparer et classer des masses par soupèsement."
+          },
+          {
+            "label": "Autonome",
+            "title": "L’affiche des masses",
+            "objective": "estimer des masses."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les représentations des nombres jusqu’à 4 (p. 20-21)",
+            "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 4."
+          }
+        ],
+        "mathCorner": {
+          "title": "Le Memory des hérissons",
+          "objective": "associer une quantité, le nom d’un nombre et une écriture chiffrée jusqu’à 4."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les sablés »"
+          },
+          {
+            "number": 2,
+            "title": "La balançoire"
+          },
+          {
+            "number": 3,
+            "title": "Les estimations"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p2-s5",
+      "level": "MS",
+      "period": 2,
+      "week": 5,
+      "title": "Composer et décomposer les nombres jusqu’à 4",
+      "domain": "Nombres",
+      "start": 97,
+      "end": 102,
+      "objectives": "Composer et décomposer des nombres inférieurs ou égaux à 6. Manipuler et verbaliser des compositions et des décompositions de nombres.",
+      "summary": "Cette semaine, nous allons apprendre à faire 4 de toutes les façons possibles.",
+      "didactic": "Composer et décomposer un nombre consiste\nà visualiser un nombre en plusieurs parties. Cet\nacte participe à la construction du concept de\nnombre, notamment en amenant une image\nmentale qui se détache de la collection obtenue\npar récitation de la comptine numérique.\n•• La composition et la décomposition sont nécessaires pour apprendre à jouer avec les nombres.\nL’objectif majeur est de mieux appréhender les\nnombres pour mieux s’en servir, notamment dans\nle calcul. Les actions de composer et de décomposer s’articulent et se construisent l’une avec l’autre.\nEn outre, le travail réalisé sur la composition et la\ndécomposition conforte le repérage de la vision\nglobale des petites quantités.\n•• Nous avons fait le choix de centrer un premier\ntravail sur le 4, tout en revoyant les compositions\net décompositions du 2 et 3. Le 4 est le premier\nnombre à offrir un éventail de compositions différentes suffisant pour faire vivre le fait qu’il existe\nde nombreuses façons de construire un même\nnombre.\n•• Il est à noter qu’aucun formalisme (=, +, etc.)\nn’est exigé des élèves.",
+      "materials": "• Diaporama www.lienmini.fr/2993d02\n• Kira\n• Jetons, cubes ou autres petits objets symboliques pour l’abstraction\n\n• Pâte à modeler\n• 4 bougies d’une couleur\n• 4 bougies d’une autre couleur\n\n• Pâte à modeler\n• 10 bougies d’une couleur\n• 10 bougies d’une autre couleur\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche « Les décompositions de 4 » (Mémo, p. 15)\n\n• Pâte à modeler\n• Une trentaine de bougies d’une couleur\n• Une trentaine de bougies d’une autre couleur\n\n• Les tartes de graines (Ressources, p. 103-106)\n• Graines\n\n• Pics à brochettes\n• Pâte à modeler\n\nMatériel par élève\n• Mon cahier de maths, p. 22 www.lienmini.fr/2993cah\n• Crayon de papier\n• Crayons de couleur",
+      "flow": "• Jour 1 Contextualisation : « Les derniers\nanniversaires des 4 ans »\n• Jour 2 Les combinaisons de bougies (1)\n• Jour 3 Les combinaisons de bougies (2)\n• Jour 4 Structuration\n\nATELIERS\nDirigé Les 4 bougies\nObjectif : manipuler des compositions et décompositions\ndu nombre 4 et les verbaliser.\nSemi-dirigé Les brochettes de bonbons\nObjectif : manipuler des compositions et décompositions\ndes nombres de 2 à 4 et les verbaliser.\nAutonome Les tartes de graines\nObjectif : manipuler des compositions du nombre 4.\nMon cahier de maths Les masses (p. 22-23)\nObjectif : estimer et comparer des masses.",
+      "differentiation": "• Pour les élèves qui en ont besoin, réaliser les 4 trous des bougies pour matérialiser\nla collection de 4 et faciliter la recherche des combinaisons.",
+      "warning": "",
+      "manual": {
+        "rituals": [
+          "Le Lucky Luke frappé",
+          "La chasse au trésor",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "Les 4 bougies",
+            "objective": "manipuler des compositions et décompositions du nombre 4 et les verbaliser."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les brochettes de bonbons",
+            "objective": "manipuler des compositions et décompositions des nombres de 2 à 4 et les verbaliser."
+          },
+          {
+            "label": "Autonome",
+            "title": "Les tartes de graines",
+            "objective": "manipuler des compositions du nombre 4."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Les masses (p. 22-23)",
+            "objective": "estimer et comparer des masses."
+          }
+        ],
+        "mathCorner": {
+          "title": "La Balance",
+          "objective": "comparer des masses avec une balance."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Les derniers anniversaires des 4 ans »"
+          },
+          {
+            "number": 2,
+            "title": "Les combinaisons de bougies (1)"
+          },
+          {
+            "number": 3,
+            "title": "Les combinaisons de bougies (2)"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ms-p2-s6",
+      "level": "MS",
+      "period": 2,
+      "week": 6,
+      "title": "Représenter la classe",
+      "domain": "Espace",
+      "start": 103,
+      "end": 108,
+      "objectives": "Situer des objets par rapport à soi, entre eux, par rapport à des objets repères. Utiliser des marqueurs spatiaux adaptés (devant, derrière, sur, sous, dessus, dessous, à l’intérieur, à l’extérieur…). Se situer par rapport à d’autres, par rapport à des objets repères. Dans un environnement bien connu, se repérer et se déplacer à partir de sa représentation. Élaborer des premiers essais de représentation plane communicables.",
+      "summary": "Cette semaine, nous allons apprendre comment représenter notre espace en plus petit, en fabriquant et en utilisant une maquette.",
+      "didactic": "Appréhender l’espace qui nous entoure est une\ncompétence qui se construit dès le plus jeune\nâge, intuitivement et empiriquement chez l’enfant. Son appréhension se consolide grâce aux\nenseignements qui stabilisent sa modélisation,\nnotamment en vivant les situations physiquement et en communiquant autour de celles-ci. La\nreprésentation de cet espace requiert un niveau\nde conceptualisation et d’analyse supérieur qu’il\nconvient d’enseigner par étapes.\n•• L’enjeu de cette semaine est le passage de l’espace réel à sa représentation, et ce en travaillant\nsur un espace bien connu et immédiat : l’espace\nde la classe.\n•• La géométrie se décline sur 3 espaces : le macro,\nle méso et le micro-espace :\n– le macro-espace est celui que l’on ne peut\nappréhender immédiatement ; il nécessite un\ndéplacement pour reconstituer une unité mentale\n(le quartier) ;\n– le méso-espace est l’espace qui nous entoure,\ncelui que l’on identifie sans grand déplacement\n(la salle de classe) ;\n– le micro-espace est l’espace dont on peut avoir\nune vision globale en un seul regard, comme\nl’espace de la feuille.\nCette semaine, on s’attachera donc à établir\nles liens entre le méso et le micro-espace tout\nen assurant les transferts des objets réels à leur\nreprésentation miniaturisée.",
+      "materials": "• Diaporama www.lienmini.fr/2993d02\n• Kira\n• Jetons, cubes ou autres petits objets symboliques pour l’abstraction\n\n• Petit matériel de classe (type briques de construction, cubes, Kapla®…)\n\n• Mémo des maths www.lienmini.fr/2993memo Fiche « Représenter la classe » (Mémo, p. 16)\n\n• 1 grande boite à chaussures ou un petit carton comme support de la maquette (taille compatible avec le petit matériel choisi pour représenter les meubles)\n• Petites boites de différentes tailles\n• Bouchons\n• Cubes\n• Kira\n• 1 pion\n\n• Briques de construction\n\n• Photos de différents endroits de l’école\n• Photos de Kira dans la classe\n\nMatériel par élève\n• Mon cahier de maths, p. 24 www.lienmini.fr/2993cah\n\n• Les tartes de graines (Ressources, p. 103-106)\n• Graines",
+      "flow": "• Jour 1 Contextualisation : « Kira présente\nla classe à ses amis »\n• Jour 2 Les devinettes de la classe (1)\n• Jour 3 Les devinettes de la classe (2)\n• Jour 4 Structuration\n\nATELIERS\nDirigé La maquette de la classe\nObjectif : réaliser une représentation en trois dimensions de la classe.\nSemi-dirigé Les photos de l’école\nObjectif : identifier des représentations planes de l’espace réel.\nAutonome La construction libre d’une classe\nObjectif : réaliser librement la représentation en 3 dimensions\nd’une classe fictive.\nMon cahier de maths Composer et décomposer\nle nombre 4 (p. 24-25)\nObjectif : manipuler des compositions du nombre 4.",
+      "differentiation": "• Pour les élèves qui en ont besoin, verbaliser précisément la place de chaque meuble ;\nfaire le lien visuel avec le réel.",
+      "warning": "La page 108 du guide MS reprend des activités de composition du nombre 4, alors que la séquence porte sur la représentation de la classe. Le contenu source est conservé ; vérifiez cette page avant de l’utiliser.",
+      "manual": {
+        "rituals": [
+          "Le Lucky Luke frappé",
+          "La chasse au trésor",
+          "La minute Énigme"
+        ],
+        "workshops": [
+          {
+            "label": "Dirigé",
+            "title": "La maquette de la classe",
+            "objective": "réaliser une représentation en trois dimensions de la classe."
+          },
+          {
+            "label": "Semi-dirigé",
+            "title": "Les photos de l’école",
+            "objective": "identifier des représentations planes de l’espace réel."
+          },
+          {
+            "label": "Autonome",
+            "title": "La construction libre d’une classe",
+            "objective": "réaliser librement la représentation en 3 dimensions d’une classe fictive."
+          },
+          {
+            "label": "Mon cahier de maths",
+            "title": "Composer et décomposer le nombre 4 (p. 24-25)",
+            "objective": "manipuler des compositions du nombre 4."
+          }
+        ],
+        "mathCorner": {
+          "title": "Les gâteaux de graines",
+          "objective": "manipuler des compositions du nombre 4."
+        },
+        "days": [
+          {
+            "number": 1,
+            "title": "Contextualisation : « Kira présente la classe à ses amis »"
+          },
+          {
+            "number": 2,
+            "title": "Les devinettes de la classe (1)"
+          },
+          {
+            "number": 3,
+            "title": "Les devinettes de la classe (2)"
+          },
+          {
+            "number": 4,
+            "title": "Structuration"
+          }
+        ]
+      }
+    }
+  ]
+}

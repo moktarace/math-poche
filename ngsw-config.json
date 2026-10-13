@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "application",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/index.html",
+          "/*.js",
+          "/*.css",
+          "/manifest.webmanifest",
+          "/icons/**",
+          "/data/**",
+          "/fonts/**"
+        ]
+      }
+    },
+    {
+      "name": "documents",
+      "installMode": "lazy",
+      "updateMode": "lazy",
+      "resources": {
+        "files": [
+          "/guides/**",
+          "/pages/**"
+        ]
+      }
+    }
+  ]
+}
